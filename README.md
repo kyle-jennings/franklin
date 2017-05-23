@@ -2,7 +2,7 @@ Franklin
 ========
 
 
-<img alt="benjamin" src="screenshot.jpg" style="float: right; margin-left: 10px;">
+<img alt="benjamin" src="https://github.com/kyle-jennings/Benjamin/blob/master/screenshot.jpg" style="float: right; margin-left: 10px;">
 
 Franklin is the companion plugin to Benjamin, the 18f styled WordPress theme.  
 
