@@ -4,7 +4,7 @@ Franklin
 
 <img alt="benjamin" src="https://github.com/kyle-jennings/Benjamin/blob/master/screenshot.jpg" style="float: right; margin-left: 10px;">
 
-Franklin is the companion plugin (and only works with) [Benjamin](https://github.com/kyle-jennings/Benjamin), the 18f styled WordPress theme.  
+Franklin is the companion plugin (and only works with) [Benjamin](https://github.com/kyle-jennings/Benjamin), the 18f styled WordPress theme.
 
 ## Components!
 * Grid columns

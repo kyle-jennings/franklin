@@ -3,7 +3,7 @@
 
 
 //// buttons
-function uswds_button($atts, $content = null){
+function franklin_button($atts, $content = null){
     extract(shortcode_atts(
         array(
             'target' => null,
@@ -29,10 +29,10 @@ function uswds_button($atts, $content = null){
 
     return $output;
 }
-add_shortcode('button', 'uswds_button');
+add_shortcode('button', 'franklin_button');
 
 
-function uswds_button_group($atts, $content = null){
+function franklin_button_group($atts, $content = null){
     extract(shortcode_atts(
         array(
             'class' => null,
@@ -42,12 +42,12 @@ function uswds_button_group($atts, $content = null){
     $class = ($class == 'dark') ? ' button_wrapper-dark' : '';
     return '<div class="button_wrapper'.$class.'">'. do_shortcode( $content ). '</div>';
 }
-add_shortcode('buttongroup', 'uswds_button_group');
+add_shortcode('buttongroup', 'franklin_button_group');
 
 
 // Labels
 //
-function uswds_label($atts, $content = null){
+function franklin_label($atts, $content = null){
     extract(shortcode_atts(
         array(
             'size' => null,
@@ -71,12 +71,12 @@ function uswds_label($atts, $content = null){
 
     return $output;
 }
-add_shortcode('label', 'uswds_label');
+add_shortcode('label', 'franklin_label');
 
 
 // Labels
 //
-function uswds_alert($atts, $content = null){
+function franklin_alert($atts, $content = null){
     extract(shortcode_atts(
         array(
             'color' => 'primary',
@@ -103,11 +103,11 @@ function uswds_alert($atts, $content = null){
 
     return $output;
 }
-add_shortcode('alert', 'uswds_alert');
+add_shortcode('alert', 'franklin_alert');
 
 
 // Accordions
-function uswds_accordion($atts, $content = null) {
+function franklin_accordion($atts, $content = null) {
 
     extract(shortcode_atts(
         array(
@@ -148,10 +148,10 @@ function uswds_accordion($atts, $content = null) {
     return $output;
 
 }
-add_shortcode('accordion', 'uswds_accordion');
+add_shortcode('accordion', 'franklin_accordion');
 
 
-function uswds_number_accordions($content) {
+function franklin_number_accordions($content) {
 
     $output = preg_replace_callback('(\[accordion )', function($matches){
 
@@ -163,10 +163,10 @@ function uswds_number_accordions($content) {
 
     return $output;
 }
-add_filter( 'the_content', 'uswds_number_accordions');
+add_filter( 'the_content', 'franklin_number_accordions');
 
 
-function uswds_brand_block($atts, $content = null){
+function franklin_brand_block($atts, $content = null){
 
     extract(shortcode_atts(
         array(
@@ -194,10 +194,10 @@ function uswds_brand_block($atts, $content = null){
 
     return $output;
 }
-add_shortcode('brand', 'uswds_brand_block');
+add_shortcode('brand', 'franklin_brand_block');
 
 
-function uswds_contact_block($atts, $content = null){
+function franklin_contact_block($atts, $content = null){
 
     extract(shortcode_atts(
         array(
@@ -266,10 +266,10 @@ function uswds_contact_block($atts, $content = null){
 
     return $output;
 }
-add_shortcode('contact-block', 'uswds_contact_block');
+add_shortcode('contact-block', 'franklin_contact_block');
 
 
-function uswds_nav_list($atts, $content = null) {
+function franklin_nav_list($atts, $content = null) {
     extract(shortcode_atts(
         array(
             'title' => null,
@@ -294,10 +294,10 @@ function uswds_nav_list($atts, $content = null) {
 
     return $output;
 }
-add_shortcode('nav-list', 'uswds_nav_list');
+add_shortcode('nav-list', 'franklin_nav_list');
 
 
-function uswds_callout($atts, $content = null) {
+function franklin_callout($atts, $content = null) {
 
     extract(shortcode_atts(
         array(
@@ -332,11 +332,11 @@ function uswds_callout($atts, $content = null) {
     return $output;
 }
 
-add_shortcode('callout', 'uswds_callout');
+add_shortcode('callout', 'franklin_callout');
 
 
 
-function uswds_media_block($atts, $content = null) {
+function franklin_media_block($atts, $content = null) {
 
     extract(shortcode_atts(
         array(
@@ -371,17 +371,17 @@ function uswds_media_block($atts, $content = null) {
     return $output;
 }
 
-add_shortcode('media-block', 'uswds_media_block');
+add_shortcode('media-block', 'franklin_media_block');
 
 
 
-function uswds_grid($atts, $content = null){
+function franklin_grid($atts, $content = null){
     return do_shortcode( $content );
     // return '<div class="usa-grid">'. do_shortcode( $content ). '</div>';
 }
-add_shortcode('grid', 'uswds_grid');
+add_shortcode('grid', 'franklin_grid');
 
-function uswds_column($atts, $content = null) {
+function franklin_column($atts, $content = null) {
     extract(shortcode_atts(
         array(
             'width' => null,
@@ -392,4 +392,4 @@ function uswds_column($atts, $content = null) {
         return false;
     return '<div class="usa-width-'.$width.'">'. do_shortcode( $content ). '</div>';
 }
-add_shortcode('column', 'uswds_column');
+add_shortcode('column', 'franklin_column');
