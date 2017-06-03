@@ -1,5 +1,11 @@
 Franklin
 ========
+Requires at least: 4.5
+Requires Benjamin theme
+Tested up to: 4.7
+Stable tag: 1.1.1
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 
 <img alt="benjamin" src="https://github.com/kyle-jennings/Benjamin/blob/master/screenshot.jpg" style="float: right; margin-left: 10px;">
@@ -81,3 +87,30 @@ Franklin is the companion plugin (and only works with) [Benjamin](https://github
 [nav-list title="the title" menu="menu-b"]
 
 [Documentation](https://github.com/kyle-jennings/Franklin/wiki/9.-Navlists)
+
+
+== Copyrights and License ==
+
+Unless otherwise specified, all the theme files, scripts and images are licensed
+under GPLv2 or later
+
+== Credits ==
+
+* US Web Design Standards (USWDS)
+(USWDS) v1.2.0 (https://standards.usa.gov/)
+Mixed License (https://github.com/18F/web-design-standards/blob/develop/LICENSE.md)
+
+
+*  This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+== Changelog ==
+
+* 1.1.1
+* moved contact settings from Benjamin to this plugin
+* added additional options to contact block:
+** contact block alignment
+** fixed defaults option
+* Added digital search support

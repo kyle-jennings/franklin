@@ -32,6 +32,7 @@ function franklin_button($atts, $content = null){
 add_shortcode('button', 'franklin_button');
 
 
+// button group
 function franklin_button_group($atts, $content = null){
     extract(shortcode_atts(
         array(
@@ -46,7 +47,6 @@ add_shortcode('buttongroup', 'franklin_button_group');
 
 
 // Labels
-//
 function franklin_label($atts, $content = null){
     extract(shortcode_atts(
         array(
@@ -75,7 +75,6 @@ add_shortcode('label', 'franklin_label');
 
 
 // Labels
-//
 function franklin_alert($atts, $content = null){
     extract(shortcode_atts(
         array(
@@ -151,6 +150,7 @@ function franklin_accordion($atts, $content = null) {
 add_shortcode('accordion', 'franklin_accordion');
 
 
+// number the accordions
 function franklin_number_accordions($content) {
 
     $output = preg_replace_callback('(\[accordion )', function($matches){
@@ -166,6 +166,7 @@ function franklin_number_accordions($content) {
 add_filter( 'the_content', 'franklin_number_accordions');
 
 
+// brand blocks
 function franklin_brand_block($atts, $content = null){
 
     extract(shortcode_atts(
@@ -197,56 +198,48 @@ function franklin_brand_block($atts, $content = null){
 add_shortcode('brand', 'franklin_brand_block');
 
 
+// contact block
 function franklin_contact_block($atts, $content = null){
 
     extract(shortcode_atts(
         array(
-            'facebook' => get_option( 'facebook_profile', null ),
-            'twitter' => get_option( 'twitter_profile', null ),
-            'youtube' => get_option( 'youtube_profile', null ),
-            'instagram' => get_option( 'instagram_profile', null ),
-            'phone' => get_option( 'phone_number', null ),
-            'email' => get_option( 'email', null ),
-            'title' => get_option( 'title', null ),
+            'facebook' => get_theme_mod( 'contact_facebook_setting', null ),
+            'twitter' => get_theme_mod( 'contact_twitter_setting', null ),
+            'youtube' => get_theme_mod( 'contact_youtube_setting', null ),
+            'instagram' => get_theme_mod( 'contact_instagram_setting', null ),
+            'phone' => get_theme_mod( 'contact_phone_setting', null ),
+            'email' => get_theme_mod( 'contact_email_setting', null ),
+            'title' => get_theme_mod( 'contact_title_setting', null ),
             'rss' => get_bloginfo('rss2_url', null),
-            'defaults' => null
+            'defaults' => null,
+            'align' => null
         ),
         $atts
     ));
 
-    if($title == '' || !$title)
-        return false;
-
-    $things = array('youtube', 'facebook', 'twitter', 'instagram', 'phone', 'email', 'rss');
+    $things = array('youtube', 'facebook', 'twitter', 'instagram', 'phone', 'email', 'rss', 'title');
     foreach($things as $thing){
-            $$thing = ($$thing !== none && $$thing && $defaults != 'no') ? $$thing : null;
-
+            $$thing = ($$thing !== none && $$thing && $defaults != 'no' ) ? $$thing : null;
+            $$thing = ($defaults == 'no' && isset($atts[$thing]) ) ? $atts[$thing] : $$thing;
     }
 
-    // $youtube = ($youtube !== 'none') ? $youtube : null;
-    // $facebook = ($facebook !== 'none') ? $facebook : null;
-    // $twitter = ($twitter !== 'none') ? $twitter : null;
-    // $instagram = ($instagram !== 'none') ? $instagram : null;
-    // $phone = ($phone !== 'none') ? $phone : null;
-    // $email = ($email !== 'none') ? $email : null;
-    // $rss = ($rss !== 'none') ? $rss : null;
-
+    $alignment = $align ? ' '.$align : '';
 
     $output = '';
-    $output .= '<div class="usa-footer-contact-links">';
+    $output .= '<div class="usa-footer-contact-links'.$alignment.'">';
         if($facebook){
-            $output .= '<a class="usa-link-facebook" href="https://facebook.com/'.$facebook.'">';
+            $output .= '<a class="usa-social-link usa-link-facebook" href="'.$facebook.'">';
                 $output .= '<span>Facebook</span>';
             $output .= '</a>';
         }
         if($twitter){
-            $output .= '<a class="usa-link-twitter" href="https://twitter.com/'.$twitter.'">';
+            $output .= '<a class="usa-social-link usa-link-twitter" href="'.$twitter.'">';
                 $output .= '<span>Twitter</span>';
             $output .= '</a>';
         }
 
         if($youtube){
-            $output .= '<a class="usa-link-youtube" href="https://youtube.com/'.$youtube.'">';
+            $output .= '<a class="usa-social-link usa-link-youtube" href="'.$youtube.'">';
                 $output .= '<span>YouTube</span>';
             $output .= '</a>';
         }
@@ -380,6 +373,7 @@ function franklin_grid($atts, $content = null){
     // return '<div class="usa-grid">'. do_shortcode( $content ). '</div>';
 }
 add_shortcode('grid', 'franklin_grid');
+
 
 function franklin_column($atts, $content = null) {
     extract(shortcode_atts(
