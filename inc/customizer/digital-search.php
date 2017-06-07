@@ -72,7 +72,9 @@ function franklin_digital_search($wp_customize) {
 
 }
 
-add_action('customize_register', 'franklin_digital_search');
+if( !in_array('sites-dashboard/sites_dashboard.php', get_option('active_plugins')) )
+    add_action('customize_register', 'franklin_digital_search');
+
 
 
 function franklin_search_engine_sanitize($val) {
