@@ -200,16 +200,17 @@ add_shortcode('brand', 'franklin_brand_block');
 
 // contact block
 function franklin_contact_block($atts, $content = null){
+    $options = get_option('contact_settings', null);
 
     extract(shortcode_atts(
         array(
-            'facebook' => get_theme_mod( 'contact_facebook_setting', null ),
-            'twitter' => get_theme_mod( 'contact_twitter_setting', null ),
-            'youtube' => get_theme_mod( 'contact_youtube_setting', null ),
-            'instagram' => get_theme_mod( 'contact_instagram_setting', null ),
-            'phone' => get_theme_mod( 'contact_phone_setting', null ),
-            'email' => get_theme_mod( 'contact_email_setting', null ),
-            'title' => get_theme_mod( 'contact_title_setting', null ),
+            'facebook' => ($options['facebook'] ? $options['facebook'] : null ),
+            'twitter' => ($options['twitter'] ? $options['twitter'] : null ),
+            'youtube' => ($options['youtube'] ? $options['youtube'] : null ),
+            'instagram' => ($options['instagram'] ? $options['instagram'] : null ),
+            'phone' => ($options['phone'] ? $options['phone'] : null ),
+            'email' => ($options['email'] ? $options['email'] : null ),
+            'title' => ($options['title'] ? $options['title'] : null ),
             'rss' => get_bloginfo('rss2_url', null),
             'defaults' => null,
             'align' => null
