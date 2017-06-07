@@ -1,22 +1,19 @@
 <?php
+if ( !defined( 'ABSPATH' ) ) exit;
 
-if( function_exists('franklin_digital_search'))
-    return;
 
-function franklin_digital_search() {
+function franklin_get_search_atts() {
+
     $id = get_current_blog_id();
-    $search = get_blog_option($id, 'sites-select-search');
-    $search_status = $search['sites-select-search-status'];
-    $search_id = $search['sites-select-search-id'];
-    $search_url = $search['sites-select-search-url'];
+
+    extract( franklin_get_options() );
 
     // if the search engine was set tp digital Search
     // and the search account was
-    $use_search = ( $search_status == 'digitalgov'
+    $use_search = ( in_array($search_engine, array('digitalgov', 'digital-search'))
                     && !empty($search_id)
-                    && function_exists('sites_dashboard_select_search_install')
-                )
-                ? true : false ;
+                ) ? true : false ;
+
 
     // if using digital search, we have either a boutique search url,
     // or the standard url at search.usa.gov

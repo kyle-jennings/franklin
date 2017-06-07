@@ -1,10 +1,10 @@
 <?php
 
-
+if ( !defined( 'ABSPATH' ) ) exit;
 
 function franklin_searchform() {
     ob_start();
-    $franklin_search = franklin_digital_search();
+    $franklin_search = franklin_get_search_atts();
 ?>
 <form role="search" method="get" class="usa-search usa-search-small js-search-form"
     action="<?php echo $franklin_search['action']; ?>">

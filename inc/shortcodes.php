@@ -1,6 +1,6 @@
 <?php
 
-
+if ( !defined( 'ABSPATH' ) ) exit;
 
 //// buttons
 function franklin_button($atts, $content = null){

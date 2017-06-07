@@ -1,5 +1,7 @@
 <?php
 
+if ( !defined( 'ABSPATH' ) ) exit;
+
 function franklin_contact_settings($wp_customize) {
     $wp_customize->add_section( 'contact_settings_section', array(
         'title'          => 'Contact Info',
@@ -18,9 +20,10 @@ function franklin_contact_settings($wp_customize) {
 
     foreach($links as $name=>$label) {
 
-        $wp_customize->add_setting( 'contact_'.$name.'_setting', array(
+        $wp_customize->add_setting( 'contact_settings['.$name.']', array(
             'default'        => '',
             'sanitize_callback' => 'franklin_'.$name.'_sanitize',
+            'type' => 'option'
         ) );
 
 
@@ -29,7 +32,7 @@ function franklin_contact_settings($wp_customize) {
             array(
                 'label' => $label,
                 'section' => 'contact_settings_section',
-                'settings' => 'contact_'.$name.'_setting',
+                'settings' => 'contact_settings['.$name.']',
                 'type' => 'text',
             )
         );
