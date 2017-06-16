@@ -6,6 +6,7 @@ function franklin_media_block($atts, $content = null) {
 
     extract(shortcode_atts(
         array(
+            'align' => null,
             'title' => null,
             'subtitle' => null,
             'text' => null,
@@ -23,16 +24,21 @@ function franklin_media_block($atts, $content = null) {
     if(!$text && !$title)
         return false;
 
+    $align = ($align == 'right') ? 'usa-media_block--right' : '';
+
     $output = '';
-    $output .= '<div class="usa-graphic_list">';
-        $output .= '<div class="usa-media_block">';
+    // $output .= '<div class="usa-graphic_list">';
+        $output .= '<div class="usa-media_block '.$align.'">';
+
             $output .= '<img class="usa-media_block-img" src="'.$logo.'" alt="'.$alttext.'">';
+
             $output .= '<div class="usa-media_block-body">';
                 $output .= $title ? '<h3>'.$title.'</h3>': $title;
                 $output .= $text ? '<p>'.$text.'</p>' : $text;
             $output .= '</div>';
+
         $output .= '</div>';
-    $output .= '</div>';
+    // $output .= '</div>';
 
     return $output;
 }
