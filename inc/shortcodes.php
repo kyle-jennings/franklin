@@ -8,6 +8,7 @@ $includes = array(
     'labels',
     'alerts',
     'accordions',
+    'accordion-group',
     'brand',
     'contact-block',
     'navlist',
