@@ -5,7 +5,7 @@
     Plugin URI: https://github.com/kyle-jennings/franklin
     Description: Companion plugin for the Benjamin theme.  This plugin contains shortcodes, and support for Digital Search
     Author: Kyle Jennings
-    Version: 1.1.1
+    Version: 1.2.3
     Author URI: https://kylejenningsdesign.com
 
     Sites report is released under GPL:
@@ -17,7 +17,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 if(!function_exists('franklin_examine')){
 
-    function examine($obj, $type = null, $tags = null){
+    function franklin_examine($obj, $type = null, $tags = null){
         if (empty($obj) && $obj != 0)
             return;
 

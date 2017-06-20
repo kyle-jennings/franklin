@@ -124,3 +124,7 @@ Mixed License (https://github.com/18F/web-design-standards/blob/develop/LICENSE.
 * added alignment to media block
 * organized shortcodes into separate files
 * made the accordions easier to build
+
+* 1.2.3
+* fixed brand bugs
+* added notes for the new accordion groups

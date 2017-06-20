@@ -14,10 +14,14 @@ function franklin_brand_block($atts, $content = null){
         ),
         $atts
     ));
+
     $size = ($size == 'slim') ? '-slim' : '';
-    $output .= '<div class="usa-footer-logo">';
+    $output .= '<div class="usa-footer-logo cf">';
+        $output .= '<a href="'.$url.'">';
         $output .= '<img class="usa-footer'.$size.'-logo-img" ';
             $output .= 'src="'.$logo.'" alt="Logo image">';
+        $output .= '</a>';
+
         $output .= '<h3 class="usa-footer'.$size.'-logo-heading">';
             $output .= '<a href="'.$url.'">'.$title.'</a>';
         $output .= '</h3>';
