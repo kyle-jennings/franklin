@@ -3,7 +3,7 @@ Franklin
 Requires at least: 4.5
 Requires Benjamin theme
 Tested up to: 4.7
-Stable tag: 1.2
+Stable tag: 1.2.3.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -60,7 +60,7 @@ Franklin is the companion plugin (and only works with) [Benjamin](https://github
 
 
 ### Accordion Groups
-[accordion-group posttype="post" taxonomy="category" term="test" count="20"]
+[accordion-group post_type="post" taxonomy="category" term="test" count="20"]
 
 
 ### Contact Blocks
@@ -125,6 +125,5 @@ Mixed License (https://github.com/18F/web-design-standards/blob/develop/LICENSE.
 * organized shortcodes into separate files
 * made the accordions easier to build
 
-* 1.2.3
-* fixed brand bugs
-* added notes for the new accordion groups
+* 1.2.3.1
+* cleaned up accordion group args to match wp_query a little bit more

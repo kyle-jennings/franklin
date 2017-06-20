@@ -3,7 +3,7 @@ Franklin
 Requires at least: 4.5
 Requires Benjamin theme
 Tested up to: 4.7
-Stable tag: 1.2
+Stable tag: 1.2.3.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -128,3 +128,6 @@ Mixed License (https://github.com/18F/web-design-standards/blob/develop/LICENSE.
 * 1.2.3
 * fixed brand bugs
 * added notes for the new accordion groups
+
+* 1.2.3.1
+* cleaned up accordion group args to match wp_query a little bit more
