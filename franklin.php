@@ -36,18 +36,27 @@ if(!function_exists('franklin_examine')){
 }
 
 
+if(wp_get_theme()->Name !== 'Benjamin')
+    return;
 
 
-// if(get_current_theme() !== 'Benjamin')
-//     return;
 
 $files = array(
+
+    'assets.php',
+
+    'customizer/video-header.php',
     'customizer/digital-search.php',
     'customizer/contact.php',
-    'shortcodes.php',
+
+    'metabox-featured-video.php',
+    'video-markup.php',
     'get-options.php',
     'get-search-atts.php',
-    'searchform.php'
+
+    'ajax.php',
+    'shortcodes.php',
+    'searchform.php',
 );
 
 foreach($files as $file)

@@ -3,3 +3,7 @@
 .svn/
 svn/.svn/
 svn/.svn/wc.db
+
+
+_dev/node_modules/
+.DS_Store
