@@ -46,7 +46,7 @@ function franklin_get_the_video_markup($url = null, $background = null) {
     $atts = '';
 
     // if the video type is not YT or vimeo then its a locally hosted vid.. maybe
-    if($type !== 'youtube' && $type !== 'vimeo'){
+    if( !in_array($type, array('youtube', 'vimeo') )){
         if($background == 'background')
             $atts = 'autoplay loop muted';
         else
@@ -56,13 +56,19 @@ function franklin_get_the_video_markup($url = null, $background = null) {
             $output .= '<video class="video" '.esc_attr($atts).' '.$src.'="'.esc_attr($url).'" type="video/'.esc_attr($type).'">';
             $output .= '</video>';
         $output .= '</div>';
-    }elseif( wp_oembed_get($url)) {
+    }elseif( wp_oembed_get($url) ) {
 
+        if($background == 'background')
+            $atts = 'autoplay loop muted';
+        else
+            $atts = 'controls';
+
+        // $args = $background ? 'autoplay loop muted' : '';
         $id = franklin_get_youtube_id($url);
         $poster = 'style="background-image: url(https://img.youtube.com/vi/'.esc_attr($id).'/0.jpg); background-repeat:no-repeat; background-size:cover;"';
 
         $output .= '<div class="video-bg video-bg--youtube" '.$poster.'>';
-            $output .= wp_oembed_get($url);
+            $output .= wp_oembed_get($url, $atts);
         $output .= '</div>';
     }
 
@@ -103,18 +109,18 @@ function franklin_get_youtube_id($url) {
  */
 function franklin_get_video_type($url) {
 
+
+    $last_dot = strrpos($url, '.') + 1;
     $type = null;
-    if('.mp4' == substr( $url, -4 ) ){
-        $type = 'mp4';
-    } elseif( '.mov' == substr( $url, -4 ) ) {
-        $type = 'mov';
-    } elseif('.webm' == substr( $url, -5 )) {
-        $type = 'webm';
-    } elseif ( preg_match( '#^https?://(?:www\.)?(?:youtube\.com/watch|youtu\.be/)#', $url ) ) {
+
+    if ( preg_match( '#^https?:\/\/(?:www\.)?(?:youtube\.com|youtu\.be)#', $url ) ) {
         $type = 'youtube';
-    } elseif( preg_match('#^https?://(.+\.)?vimeo\.com/.*#', $url ) ) {
+    } elseif( preg_match( '#^https?:\/\/(?:www\.)?(?:vimeo\.com|youtu\.be)#', $url ) ) {
         $type = 'vimeo';
+    } elseif( in_array( $type = substr( $url, $last_dot), array('mp4', 'mov', 'webm') ) ) {
+        $type = substr( $url, $last_dot);
     }
+
 
     return $type;
 }
