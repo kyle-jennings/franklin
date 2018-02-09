@@ -28,8 +28,6 @@ add_action('customize_register', 'franklin_customizer_settings', 50);
 function franklin_template_layout_settings($wp_customize) {
 
 
-
-
     $templates = benjamin_the_template_list();
     // for each template in the template list, we set up their customizer sections
     foreach($templates as $name => $template):

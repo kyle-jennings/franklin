@@ -36,9 +36,8 @@ if(!function_exists('franklin_examine')){
 }
 
 
-if(wp_get_theme()->Name !== 'Benjamin')
+if(wp_get_theme()->Name !== 'Benjamin' )
     return;
-
 
 
 $files = array(

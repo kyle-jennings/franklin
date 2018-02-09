@@ -15,9 +15,9 @@ function franklin_get_options() {
     } else {
 
         $digital_search = get_option('digital_search_settings', array());
-        $search_engine = $digital_search['engine'] ? $digital_search['engine'] : null;
-        $search_id = $digital_search['id'] ? $digital_search['id'] : null;
-        $search_url = $digital_search['custom_domain'] ? $digital_search['custom_domain'] : null;
+        $search_engine = isset($digital_search['engine']) ? $digital_search['engine'] : null;
+        $search_id = isset($digital_search['id']) ? $digital_search['id'] : null;
+        $search_url = isset($digital_search['custom_domain']) ? $digital_search['custom_domain'] : null;
     }
 
     return array(
