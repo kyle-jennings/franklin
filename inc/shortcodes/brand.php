@@ -16,6 +16,7 @@ function franklin_brand_block($atts, $content = null){
     ));
 
     $size = ($size == 'slim') ? '-slim' : '';
+    $output = '';
     $output .= '<div class="usa-footer-logo cf">';
         $output .= '<a href="'.$url.'">';
         $output .= '<img class="usa-footer'.$size.'-logo-img" ';

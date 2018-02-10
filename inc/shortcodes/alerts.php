@@ -13,9 +13,8 @@ function franklin_alert($atts, $content = null){
         $atts
     ));
 
-    $state = $state ? 'usa-alert-'.$state : null;
-    $color = 'usa-alert-'.$color;
-    $class = implode(array($size, $color, $state), ' ');
+
+    $class = 'usa-alert-'.$color;
 
     $output = '';
     $output .= '<div class="usa-alert '.$class.'">';

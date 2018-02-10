@@ -2,7 +2,7 @@
 
 if ( !defined( 'ABSPATH' ) ) exit;
 
-function franklin_media_block($atts, $content = null) {
+function franklin_media_block($atts) {
 
     extract(shortcode_atts(
         array(

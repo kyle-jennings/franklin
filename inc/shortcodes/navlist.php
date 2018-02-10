@@ -2,7 +2,7 @@
 
 if ( !defined( 'ABSPATH' ) ) exit;
 
-function franklin_nav_list($atts, $content = null) {
+function franklin_nav_list($atts) {
     extract(shortcode_atts(
         array(
             'title' => null,

@@ -16,12 +16,12 @@ function franklin_accordion($atts, $content = null) {
     ));
 
 
+    if(!$content || !$title)
+        return false;
 
     $style = $style ? 'usa-alert-bordered' : 'usa-alert';
 
     $output = '';
-
-
     $output .= '<div class="usa-accordion-bordered">';
         $output .= '<button class="usa-accordion-button"
             aria-controls="accordion-'.$id.'"
@@ -34,11 +34,6 @@ function franklin_accordion($atts, $content = null) {
             $output .= '</p>';
         $output .= '</div>';
     $output .= '</div>';
-
-
-
-    if(!$content || !$title)
-        return false;
 
     return $output;
 
