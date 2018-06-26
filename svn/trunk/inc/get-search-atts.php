@@ -34,7 +34,7 @@ function franklin_get_search_atts() {
 
     // package up these args
     $args = array(
-        'use_search' => $user_search,
+        'use_search' => $use_search,
         'action' => $action,
         'hidden' => $hidden,
         'name' => $name

@@ -24,7 +24,7 @@ function franklin_contact_block($atts, $content = null){
 
     $things = array('youtube', 'facebook', 'twitter', 'instagram', 'phone', 'email', 'rss', 'title');
     foreach($things as $thing){
-            $$thing = ($$thing !== none && $$thing && $defaults != 'no' ) ? $$thing : null;
+            $$thing = ($$thing !== 'none' && $$thing && $defaults != 'no' ) ? $$thing : null;
             $$thing = ($defaults == 'no' && isset($atts[$thing]) ) ? $atts[$thing] : $$thing;
     }
 

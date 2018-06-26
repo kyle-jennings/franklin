@@ -22,7 +22,7 @@ function franklin_digital_search($wp_customize) {
     ) );
 
     $wp_customize->add_control(  'digital_search_engine'.'_control', array(
-            'label'   => $label,
+            'label'   => 'Search Engine',
             'section' => 'digital_search_section',
             'settings' => 'digital_search_settings[engine]',
             'type' => 'select',

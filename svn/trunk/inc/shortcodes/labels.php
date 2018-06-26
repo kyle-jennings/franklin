@@ -3,7 +3,7 @@
 if ( !defined( 'ABSPATH' ) ) exit;
 
 // Labels
-function franklin_label($atts, $content = null){
+function franklin_label($atts){
     extract(shortcode_atts(
         array(
             'size' => null,
