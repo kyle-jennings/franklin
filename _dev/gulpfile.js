@@ -1,4 +1,14 @@
 var autoprefixer = require('autoprefixer');
+var browserify  = require('browserify');
+var babelify    = require('babelify');
+var source      = require('vinyl-source-stream');
+var buffer      = require('vinyl-buffer');
+var uglify      = require('gulp-uglify');
+var livereload  = require('gulp-livereload');
+var fs = require('fs');
+var path = require('path');
+
+
 var browserify = require('browserify');
 var cssnano = require('gulp-cssnano');
 var concat = require('gulp-concat');
@@ -36,7 +46,9 @@ var paths = {
   adminAssetsPath: '../inc/admin/assets',
   npmPath : './node_modules',
   bowerPath: './bower_components',
-  vendorPath: './js/vendor'
+  vendorPath: './js/vendor',
+  gutenbergSrc: './gutenberg',
+  gutenbergBuilds: '../inc/gutenberg/blocks'
 };
 paths.scssGlob = paths.srcPath + '/scss/**/*.scss';
 paths.jsGlob = paths.srcPath + '/js/**/*.js';
@@ -49,25 +61,57 @@ paths.adminJSGlob = paths.adminSrcPath + '/js/**/*.js';
 //  The frontend assets
 // ---------------------------------------------------------------------------
 
+//
+// GutenBerg
+//
 
-gulp.task('js',['clean:js'], function(){
 
-  var browserified = transform(function(filename) {
-    var b = browserify(filename);
-    return b.bundle();
+
+function getFolders(dir) {
+  return fs.readdirSync(dir)
+  .filter(function(file) {
+    return fs.statSync(path.join(dir, file)).isDirectory();
   });
+}
 
-  return gulp.src([
-    paths.srcPath + '/js/manifest.js',
-  ] )
-  .pipe(plumber({ errorHandler: handleErrors }))
-  .pipe(browserified)
-  .pipe(minify())
-  .pipe(rename('franklin.js'))
-  .pipe(gulp.dest( paths.assetsPath + '/js' ));
-  // .pipe(notify({message: 'JS complete'}));
+gulp.task('gutenbergs', function() {
+   var folders = getFolders(paths.gutenbergSrc);
 
+   var tasks = folders.map(function(folder) {
+   		var file = 'block.js';
+   		var srcPath = paths.gutenbergSrc + '/' + folder + '/js/' + file;
+   		var blockPath = paths.gutenbergBuilds + '/' + folder;
+   		console.log(srcPath, blockPath, file);
+			
+			return browserify({entries: srcPath, debug: true})
+			.transform("babelify", { presets: ["es2015"], plugins: ['transform-react-jsx'] })
+			.bundle()
+			.pipe(source(file))
+			.pipe(buffer())
+			.pipe(sourcemaps.init())
+			.pipe(uglify())
+			.pipe(sourcemaps.write('./maps'))
+			.pipe(gulp.dest(blockPath));
+   });
+
+   return tasks; //merge(tasks, root);
 });
+
+
+gulp.task('js', ['clean:js'], function () {
+    // app.js is your main JS file with all your module inclusions
+    return browserify({entries: paths.srcPath + '/js/manifest.js', debug: true})
+    .transform("babelify", { presets: ["es2015"] })
+    .bundle()
+    .pipe(source('manifest.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(sourcemaps.write('./maps'))
+  	.pipe(rename('franklin.js'))
+  	.pipe(gulp.dest( paths.assetsPath + '/js' ));
+});
+
 
 
 gulp.task('clean:js', function() {
@@ -128,6 +172,7 @@ gulp.task('clean:css', function() {
     [ paths.assetsPath + '/css' ],
     {read:false, force: true});
 });
+
 
 // ---------------------------------------------------------------------------
 //  Utilities

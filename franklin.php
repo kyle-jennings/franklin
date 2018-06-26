@@ -29,7 +29,7 @@ if(wp_get_theme()->Name !== 'Benjamin' )
 
 $files = array(
     'assets',
-    // 'customizer/video-header',
+    'gutenberg/init',
     'customizer/digital-search',
     'customizer/contact',
     // 'metabox-featured-video',
