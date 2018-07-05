@@ -1,0 +1,36 @@
+$output-bourbon-deprecation-warnings: false !default;
+	// Vendor -------------- //
+.guttenberg-usa-button {
+	@import 'lib/bourbon';
+	@import 'lib/neat';
+	@import 'lib/normalize';
+	@import 'core/variables';
+	@import 'core/fonts';
+	@import 'core/base';
+	@import 'core/grid';
+	@import 'core/utilities';
+
+	@import 'elements/buttons';
+
+	.usa-button {
+		padding: 10px 20px;
+	}
+
+	.button-text,
+	.button-text:focus,
+	.button-text *,
+	.button-text *:focus { 
+		background: transparent;
+		border: none;
+	}
+
+	.editor-block-list__block input::-webkit-input-placeholder,
+	.editor-block-list__block textarea::-webkit-input-placeholder,
+	.editor-post-title input::-webkit-input-placeholder,
+	.editor-post-title textarea::-webkit-input-placeholder,
+	.editor-plain-text {
+		color: white;
+		height: 17px;
+		font-size: 17px;
+	}
+}

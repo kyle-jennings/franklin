@@ -65,8 +65,7 @@ paths.adminJSGlob = paths.adminSrcPath + '/js/**/*.js';
 // GutenBerg
 //
 
-
-
+// the folder structure
 function getFolders(dir) {
   return fs.readdirSync(dir)
   .filter(function(file) {
@@ -74,7 +73,7 @@ function getFolders(dir) {
   });
 }
 
-gulp.task('gutenbergs', function() {
+gulp.task('gutenberg_js', function() {
    var folders = getFolders(paths.gutenbergSrc);
 
    var tasks = folders.map(function(folder) {
@@ -97,7 +96,43 @@ gulp.task('gutenbergs', function() {
    return tasks; //merge(tasks, root);
 });
 
+// gutenberg scss
+gulp.task('gutenberg_css', function() {
+   var folders = getFolders(paths.gutenbergSrc);
+   var tasks = folders.map(function(folder) {
 
+   		let srcPath = paths.gutenbergSrc + '/' + folder + '/css/';
+   		let blockPath = paths.gutenbergBuilds + '/' + folder + '/';
+
+		  return gulp.src([
+		      srcPath + 'backend.scss',
+		      srcPath + 'frontend.scss'
+		    ])
+		    .pipe(plumber({ errorHandler: handleErrors }))
+		    // .pipe(sourcemaps.init())
+		    .pipe(sass({
+		      includePaths: [
+		      	paths.npmPath + '/uswds/src/stylesheets',
+		        srcPath + '**/*.scss'
+		      ],
+		      errLogToConsole: true,
+		      outputStyle: 'expanded'
+		    }))
+		    .pipe(postcss([
+		      autoprefixer({ browsers: ['last 2 version'] })
+		    ]))
+		    // .pipe(sourcemaps.write())
+		    .pipe(gulp.dest( blockPath ))
+		    .pipe(cssnano({ safe: true }));
+
+   });
+
+   return tasks; //merge(tasks, root);
+});
+
+/**
+ * Compile the JS, this also transpiles to ES5
+ */
 gulp.task('js', ['clean:js'], function () {
     // app.js is your main JS file with all your module inclusions
     return browserify({entries: paths.srcPath + '/js/manifest.js', debug: true})
@@ -113,7 +148,9 @@ gulp.task('js', ['clean:js'], function () {
 });
 
 
-
+/**
+ * Remove the old JS files
+ */
 gulp.task('clean:js', function() {
   return del(
     [ paths.assetsPath + '/js' ],
@@ -228,4 +265,19 @@ gulp.task('watch', function() {
   gulp.start('build');
   gulp.watch(paths.jsGlob, ['js']);
   gulp.watch(paths.scssGlob, ['css']);
+});
+
+
+gulp.task('gutenberg_build', function(){
+  gulp.start('gutenberg_js');
+  gulp.start('gutenberg_css');
+});
+
+/**
+ * Process tasks and reload browsers.
+ */
+gulp.task('gutenberg_watch', function() {
+  gulp.start('gutenberg_build');
+  gulp.watch(paths.gutenbergSrc + '/**/*.js', ['gutenberg_js']);
+  gulp.watch(paths.gutenbergSrc + '/**/*.scss', ['gutenberg_css']);
 });

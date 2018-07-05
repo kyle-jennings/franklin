@@ -1,65 +1,90 @@
+const { __ } = wp.i18n;
 const { RichText, MediaUpload, PlainText } = wp.editor;
-const { registerBlockType } = wp.blocks;
+const { registerBlockType, BlockControls, AlignmentToolbar } = wp.blocks;
+const { DropdownMenu, Dropdown } = wp.components;
 const { Button } = wp.components;
+
+BlockControls,
+	AlignmentToolbar
 
 registerBlockType('franklin/button', {
 	title: 'Button',
+	keywords: ['button' ],
 	icon: 'admin-links',
-	category: 'common',
+	category: 'layout',
 	attributes: {
 		text: {
 			source: 'text',
-			selector: '.text'
+			selector: '.usa-button'
 		},
+
 		url: {
-			source: 'url',
+			source: 'text',
 			selector: '.url'
 		},
-		color: {
-			source: 'color',
-			selector: '.color'
-		},
+
+		color: {},
 	},
 
-	edit({attributes, className, setAttributes}) {
+	edit({attributes, className, setAttributes, focus}) {
+		const colorArray = [
+			{
+				title: 'Primary',
+				onClick: () => changeButtonColor( 'primary' )
+			},
+			{
+				title: 'Primary Alt',
+				onClick: () => changeButtonColor( 'primary-alt' )
+			},
+			{
+				title: 'Secondary',
+				onClick: () => changeButtonColor( 'secondary' )
+			},
+			{
+				title: 'Gray',
+				onClick: () => changeButtonColor( 'gray' )
+			},
+			{
+				title: 'Outlined',
+				onClick: () => changeButtonColor( 'outline' )
+			},
+		];
+
+		const changeButtonColor = (color) => {
+			color = 'usa-button-' + color;
+			setAttributes({ color: color});
+		}
+
 		return (
-			<div class="usa-button usa-button-gray">
-				<PlainText
-				  onChange={ content => setAttributes({ text: content }) }
-				  value={ attributes.text }
-				  placeholder="Your button text"
-				  className="button-text"
-				/> 
-				<PlainText
-				  onChange={ content => setAttributes({ color: content }) }
-				  value={ attributes.color }
-				  placeholder="Your button color"
-				  className="button-color"
-				/> 
-				<PlainText
-				  onChange={ content => setAttributes({ url: content }) }
-				  value={ attributes.url }
-				  placeholder="Your button url"
-				  className="button-url"
-				/> 
+			<div class="guttenberg-usa-button">
+				{
+					! focus && (
+						<BlockControls>
+							<DropdownMenu
+								icon="art"
+								label="Choose a color"
+								controls={ colorArray }
+							/>
+						</BlockControls>
+					)
+				}
+				<button className={'usa-button ' + attributes.color } >
+					<PlainText
+					  onChange={ content => setAttributes({ text: content }) }
+					  value={ attributes.text }
+					  placeholder="Your button text"
+					  className="button-text"
+					/> 
+				</button>
 			</div>
 		);
 	},
 	
 	save({attributes}) {
-		const colorClass = (color) => {
-			return 'usa-button-' + color;
-		}
-
-		const getURL = (url) => {
-			return url;
-		}
-
 		return (
-			<a class="usa-button {colorClass(attributes.color)}" 
-			href="{getURL(attributes.url)">
+			<button className={'usa-button ' + attributes.color }>
 				{ attributes.text }
-			</a>
+			</button>
 		);
 	} 
 

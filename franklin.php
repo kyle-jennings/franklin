@@ -22,7 +22,6 @@ if(!defined('BENJAMIN_POST_FORMATS')) {
 
 }
 
-
 if(wp_get_theme()->Name !== 'Benjamin' )
     return;
 
