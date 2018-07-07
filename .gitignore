@@ -1,5 +1,6 @@
 .DS_STORE
 **/*/.DS_STORE
+svn/
 .svn/
 svn/.svn/
 svn/.svn/wc.db

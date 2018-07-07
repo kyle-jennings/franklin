@@ -3,7 +3,7 @@ Franklin
 Requires at least: 4.5
 Requires Benjamin theme
 Tested up to: 4.7
-Stable tag: 1.2.3.1
+Stable tag: 1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
