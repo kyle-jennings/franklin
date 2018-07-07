@@ -16,8 +16,8 @@ fi
 
 
 if [ ! -d "svn" ]; then
-    echo svn co https:plugins.svn/wordpress.org/franklin svn
-    svn co https:plugins.svn/wordpress.org/franklin svn
+    echo svn co https://plugins.svn.wordpress.org/franklin svn
+    svn co https://plugins.svn.wordpress.org/franklin svn
 fi
 
 
