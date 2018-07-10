@@ -39,5 +39,10 @@
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^1.1.0",
     "vinyl-transform": "1.0.0"
+  },
+  "dependencies": {
+    "gulp-load-plugins": "^1.5.0",
+    "merge": "^1.2.0",
+    "require-dir": "^1.0.0"
   }
 }
