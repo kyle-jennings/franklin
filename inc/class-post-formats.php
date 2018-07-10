@@ -87,8 +87,8 @@ class BenjaminPostFormat
         global $typenow;
 
         if (in_array($typenow, self::$screens, true)) {
-            $file  = get_template_directory_uri() . '/assets/admin/js/';
-            $file .=  '_benjamin-post-formats-min.js';
+            $file  = plugin_dir_url(dirname(__FILE__)) . '/assets/js/';
+            $file .=  'franklin-post-formats.min.js';
 
             wp_enqueue_script('post_formats_js', $file, array('jquery'), null, true);
         }
