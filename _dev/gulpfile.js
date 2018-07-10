@@ -83,9 +83,62 @@ paths.gutenGlobSCSS = paths.gutenbergSrc + '/**/*.scss',
 //  Utilities
 // ---------------------------------------------------------------------------
 
-// gulp.task('pot', getTask('pot'));
-// gulp.task('gutenberg_js', getTask('gutenberg_js'));
-// gulp.task('gutenberg_css', getTask('gutenberg_css'));
+
+gulp.task('gutenberg_js', function(){
+  var folders = getFolders(paths.gutenbergSrc);
+  var tasks = folders.map(function(folder) {
+    var file = 'block.js';
+    var srcPath = paths.gutenbergSrc + '/' + folder + '/js/' + file;
+    var blockPath = paths.gutenbergBuilds + '/' + folder;
+    
+    return browserify({entries: srcPath, debug: true})
+    .transform("babelify", { presets: ["es2015"], plugins: ['transform-react-jsx'] })
+    .bundle()
+    .pipe(source(file))
+    .pipe(buffer())
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest(blockPath));
+  });
+
+  return tasks; 
+});
+
+
+gulp.task('gutenberg_css', function(){
+  var folders = getFolders(paths.gutenbergSrc);
+  var tasks = folders.map(function(folder) {
+
+  let srcPath = paths.gutenbergSrc + '/' + folder + '/css/';
+  let blockPath = paths.gutenbergBuilds + '/' + folder + '/';
+
+  return gulp.src([
+      srcPath + 'backend.scss',
+      srcPath + 'frontend.scss'
+    ])
+    .pipe(plumber({ errorHandler: handleErrors }))
+    // .pipe(sourcemaps.init())
+    .pipe(sass({
+      includePaths: [
+        paths.npmPath + '/uswds/src/stylesheets',
+        srcPath + '**/*.scss'
+      ],
+      errLogToConsole: true,
+      outputStyle: 'expanded'
+    }))
+    .pipe(postcss([
+      autoprefixer({ browsers: ['last 2 version'] })
+    ]))
+    // .pipe(sourcemaps.write())
+    .pipe(gulp.dest( blockPath ))
+    .pipe(cssnano({ safe: true }));
+
+  });
+
+  return tasks; //merge(tasks, root);
+});
+
 
 /**
  * Build the Javascript
@@ -174,19 +227,6 @@ gulp.task('clean:css', function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * Builds the JS and SASS
  * @return {[type]} [description]
@@ -215,16 +255,16 @@ gulp.task('watch', function() {
 });
 
 
-// gulp.task('gutenberg_build', function(){
-//   gulp.start('gutenberg_js');
-//   gulp.start('gutenberg_css');
-// });
+gulp.task('gutenberg_build', function(){
+  gulp.start('gutenberg_js');
+  gulp.start('gutenberg_css');
+});
 
-// /**
-//  * Process tasks and reload browsers.
-//  */
-// gulp.task('gutenberg_watch', function() {
-//   gulp.start('gutenberg_build');
-//   gulp.watch(paths.gutenbergSrc + '/**/*.js', ['gutenberg_js']);
-//   gulp.watch(paths.gutenbergSrc + '/**/*.scss', ['gutenberg_css']);
-// });
+/**
+ * Process tasks and reload browsers.
+ */
+gulp.task('gutenberg_watch', function() {
+  gulp.start('gutenberg_build');
+  gulp.watch(paths.gutenbergSrc + '/**/*.js', ['gutenberg_js']);
+  gulp.watch(paths.gutenbergSrc + '/**/*.scss', ['gutenberg_css']);
+});
