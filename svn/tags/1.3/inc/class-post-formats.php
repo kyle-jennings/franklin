@@ -48,7 +48,7 @@ class BenjaminPostFormat
                     'post_formats_' . $format,
                     /* translators: one of the post format types*/
                     sprintf(__('%s ', 'benjamin'), esc_attr($title)),
-                    array('PostFormat' . $title, 'meta_box_html'),
+                    array('BenjaminPostFormat' . $title, 'meta_box_html'),
                     $screen,
                     'top',
                     'default'

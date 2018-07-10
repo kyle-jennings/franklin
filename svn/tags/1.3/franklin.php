@@ -54,7 +54,6 @@ if(class_exists('BenjaminPostFormat')) {
     foreach ($files as $file) {
         require_once $admin_root . DIRECTORY_SEPARATOR . 'post-formats' . DIRECTORY_SEPARATOR . $file . '.php';
     }
-    
     BenjaminPostFormat::init(array('post', 'page'));
 }
 
