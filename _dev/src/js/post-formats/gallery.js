@@ -104,5 +104,7 @@ function benjamin_ajax_shortcode(str,  $metabox){
 
 
 jQuery(document).ready(function($){
-  gallery_box();
+  if(document.querySelector('#post_formats_gallery')) {
+    gallery_box();
+  }
 });

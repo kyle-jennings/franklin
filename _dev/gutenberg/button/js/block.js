@@ -1,11 +1,7 @@
 const { __ } = wp.i18n;
-const { RichText, MediaUpload, PlainText } = wp.editor;
-const { registerBlockType, BlockControls, AlignmentToolbar } = wp.blocks;
-const { DropdownMenu, Dropdown } = wp.components;
-const { Button } = wp.components;
-
-BlockControls,
-	AlignmentToolbar
+const { RichText, MediaUpload, PlainText, BlockControls } = wp.editor;
+const { registerBlockType } = wp.blocks;
+const { DropdownMenu, Dropdown, Button } = wp.components;
 
 registerBlockType('franklin/button', {
 	title: 'Button',

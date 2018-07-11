@@ -29,6 +29,7 @@ if(wp_get_theme()->Name !== 'Benjamin' )
 
 $files = array(
     'assets',
+    'gutenberg/init',
     'customizer/digital-search',
     'customizer/contact',
     'video-markup',

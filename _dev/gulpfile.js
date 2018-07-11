@@ -89,7 +89,7 @@ gulp.task('gutenberg_js', function(){
   var tasks = folders.map(function(folder) {
     var file = 'block.js';
     var srcPath = paths.gutenbergSrc + '/' + folder + '/js/' + file;
-    var blockPath = paths.gutenbergBuilds + '/' + folder;
+    var blockPath = paths.gutenbergBuilds + '/' + folder + '/lib';
     
     return browserify({entries: srcPath, debug: true})
     .transform("babelify", { presets: ["es2015"], plugins: ['transform-react-jsx'] })
@@ -111,7 +111,7 @@ gulp.task('gutenberg_css', function(){
   var tasks = folders.map(function(folder) {
 
   let srcPath = paths.gutenbergSrc + '/' + folder + '/css/';
-  let blockPath = paths.gutenbergBuilds + '/' + folder + '/';
+  let blockPath = paths.gutenbergBuilds + '/' + folder + '/lib';
 
   return gulp.src([
       srcPath + 'backend.scss',
