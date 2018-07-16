@@ -1,6 +1,6 @@
 $output-bourbon-deprecation-warnings: false !default;
 	// Vendor -------------- //
-.guttenberg-usa-button {
+.guttenberg-usa-callout {
 	@import 'lib/bourbon';
 	@import 'lib/neat';
 	@import 'lib/normalize';
@@ -10,13 +10,20 @@ $output-bourbon-deprecation-warnings: false !default;
 	@import 'core/grid';
 	@import 'core/utilities';
 
+	@import 'components/hero';
 	@import 'elements/buttons';
 
+	.usa-hero-callout-alt {
+		color: inherit;
+	}
+
+	.callout-text {
+		
+	}
 
 	.editor-plain-text {
 		color: #191e23;
 	}
-
 
 	.usa-button__inline-link {
 		position: relative;

@@ -1,0 +1,1359 @@
+.guttenberg-usa-callout {
+  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+  /**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+  /**
+ * Remove default margin.
+ */
+  /* HTML5 display definitions
+   ========================================================================== */
+  /**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+  /**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+  /**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+  /**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+  /* Links
+   ========================================================================== */
+  /**
+ * Remove the gray background color from active links in IE 10.
+ */
+  /**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+  /* Text-level semantics
+   ========================================================================== */
+  /**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+  /**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+  /**
+ * Address styling not present in Safari and Chrome.
+ */
+  /**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+  /**
+ * Address styling not present in IE 8/9.
+ */
+  /**
+ * Address inconsistent and variable font size in all browsers.
+ */
+  /**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+  /* Embedded content
+   ========================================================================== */
+  /**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+  /**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+  /* Grouping content
+   ========================================================================== */
+  /**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+  /**
+ * Address differences between Firefox and other browsers.
+ */
+  /**
+ * Contain overflow in all browsers.
+ */
+  /**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+  /* Forms
+   ========================================================================== */
+  /**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+  /**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+  /**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+  /**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+  /**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+  /**
+ * Re-set default cursor for disabled elements.
+ */
+  /**
+ * Remove inner padding and border in Firefox 4+.
+ */
+  /**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+  /**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+  /**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+  /**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+  /**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+  /**
+ * Define consistent border, margin, and padding.
+ */
+  /**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+  /**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+  /**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+  /* Tables
+   ========================================================================== */
+  /**
+ * Remove most spacing between table cells.
+ */
+  /* stylelint-disable at-rule-empty-line-before */
+  /* stylelint-enable */
+  /* stylelint-disable selector-no-qualifying-type */
+  /* stylelint-disable */
+}
+
+.guttenberg-usa-callout html {
+  box-sizing: border-box;
+}
+
+.guttenberg-usa-callout *, .guttenberg-usa-callout *::after, .guttenberg-usa-callout *::before {
+  box-sizing: inherit;
+}
+
+.guttenberg-usa-callout html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+.guttenberg-usa-callout body {
+  margin: 0;
+}
+
+.guttenberg-usa-callout article,
+.guttenberg-usa-callout aside,
+.guttenberg-usa-callout details,
+.guttenberg-usa-callout figcaption,
+.guttenberg-usa-callout figure,
+.guttenberg-usa-callout footer,
+.guttenberg-usa-callout header,
+.guttenberg-usa-callout hgroup,
+.guttenberg-usa-callout main,
+.guttenberg-usa-callout menu,
+.guttenberg-usa-callout nav,
+.guttenberg-usa-callout section,
+.guttenberg-usa-callout summary {
+  display: block;
+}
+
+.guttenberg-usa-callout audio,
+.guttenberg-usa-callout canvas,
+.guttenberg-usa-callout progress,
+.guttenberg-usa-callout video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+.guttenberg-usa-callout audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+.guttenberg-usa-callout [hidden],
+.guttenberg-usa-callout template {
+  display: none;
+}
+
+.guttenberg-usa-callout a {
+  background-color: transparent;
+}
+
+.guttenberg-usa-callout a:active,
+.guttenberg-usa-callout a:hover {
+  outline: 0;
+}
+
+.guttenberg-usa-callout abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+.guttenberg-usa-callout b,
+.guttenberg-usa-callout strong {
+  font-weight: bold;
+}
+
+.guttenberg-usa-callout dfn {
+  font-style: italic;
+}
+
+.guttenberg-usa-callout h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.guttenberg-usa-callout mark {
+  background: #ff0;
+  color: #000;
+}
+
+.guttenberg-usa-callout small {
+  font-size: 80%;
+}
+
+.guttenberg-usa-callout sub,
+.guttenberg-usa-callout sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.guttenberg-usa-callout sup {
+  top: -0.5em;
+}
+
+.guttenberg-usa-callout sub {
+  bottom: -0.25em;
+}
+
+.guttenberg-usa-callout img {
+  border: 0;
+}
+
+.guttenberg-usa-callout svg:not(:root) {
+  overflow: hidden;
+}
+
+.guttenberg-usa-callout figure {
+  margin: 1em 40px;
+}
+
+.guttenberg-usa-callout hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.guttenberg-usa-callout pre {
+  overflow: auto;
+}
+
+.guttenberg-usa-callout code,
+.guttenberg-usa-callout kbd,
+.guttenberg-usa-callout pre,
+.guttenberg-usa-callout samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.guttenberg-usa-callout button,
+.guttenberg-usa-callout input,
+.guttenberg-usa-callout optgroup,
+.guttenberg-usa-callout select,
+.guttenberg-usa-callout textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+.guttenberg-usa-callout button {
+  overflow: visible;
+}
+
+.guttenberg-usa-callout button,
+.guttenberg-usa-callout select {
+  text-transform: none;
+}
+
+.guttenberg-usa-callout button,
+.guttenberg-usa-callout html input[type="button"],
+.guttenberg-usa-callout input[type="reset"],
+.guttenberg-usa-callout input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+.guttenberg-usa-callout button[disabled],
+.guttenberg-usa-callout html input[disabled] {
+  cursor: default;
+}
+
+.guttenberg-usa-callout button::-moz-focus-inner,
+.guttenberg-usa-callout input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.guttenberg-usa-callout input {
+  line-height: normal;
+}
+
+.guttenberg-usa-callout input[type="checkbox"],
+.guttenberg-usa-callout input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+.guttenberg-usa-callout input[type="number"]::-webkit-inner-spin-button,
+.guttenberg-usa-callout input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.guttenberg-usa-callout input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+.guttenberg-usa-callout input[type="search"]::-webkit-search-cancel-button,
+.guttenberg-usa-callout input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.guttenberg-usa-callout fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+.guttenberg-usa-callout legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+.guttenberg-usa-callout textarea {
+  overflow: auto;
+}
+
+.guttenberg-usa-callout optgroup {
+  font-weight: bold;
+}
+
+.guttenberg-usa-callout table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.guttenberg-usa-callout td,
+.guttenberg-usa-callout th {
+  padding: 0;
+}
+
+@font-face {
+  .guttenberg-usa-callout {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro-light-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-callout {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-callout {
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/sourcesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-italic-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-italic-webfont.woff") format("woff"), url("../fonts/sourcesanspro-italic-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-callout {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-callout {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/merriweather-light-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-callout {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-callout {
+    font-family: "Merriweather";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-callout {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/merriweather-bold-webfont.ttf") format("truetype");
+  }
+}
+
+.guttenberg-usa-callout html {
+  box-sizing: border-box;
+}
+
+.guttenberg-usa-callout *,
+.guttenberg-usa-callout *::before,
+.guttenberg-usa-callout *::after {
+  box-sizing: inherit;
+}
+
+.guttenberg-usa-callout body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.guttenberg-usa-callout .lt-ie9 * {
+  filter: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.guttenberg-usa-callout [hidden] {
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.guttenberg-usa-callout .usa-grid,
+.guttenberg-usa-callout .usa-grid-full {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;
+}
+
+.guttenberg-usa-callout .usa-grid::after,
+.guttenberg-usa-callout .usa-grid-full::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.guttenberg-usa-callout .usa-grid {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .guttenberg-usa-callout .usa-grid {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.guttenberg-usa-callout .usa-grid-full {
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .guttenberg-usa-callout .usa-width-one-whole {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .guttenberg-usa-callout .usa-width-one-whole:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-half {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .guttenberg-usa-callout .usa-width-one-half:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-third {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-callout .usa-width-one-third:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-two-thirds {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .guttenberg-usa-callout .usa-width-two-thirds:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-fourth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .guttenberg-usa-callout .usa-width-one-fourth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-fourth:nth-child(2n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-three-fourths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .guttenberg-usa-callout .usa-width-three-fourths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-sixth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-callout .usa-width-one-sixth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-sixth:nth-child(3n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-five-sixths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .guttenberg-usa-callout .usa-width-five-sixths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-twelfth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-callout .usa-width-one-twelfth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-twelfth:nth-child(3n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-five-twelfths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-callout .usa-width-five-twelfths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-seven-twelfths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .guttenberg-usa-callout .usa-width-seven-twelfths:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .guttenberg-usa-callout .usa-width-one-whole {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .guttenberg-usa-callout .usa-width-one-whole:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-half {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .guttenberg-usa-callout .usa-width-one-half:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-third {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .guttenberg-usa-callout .usa-width-one-third:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-two-thirds {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  .guttenberg-usa-callout .usa-width-two-thirds:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-fourth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .guttenberg-usa-callout .usa-width-one-fourth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-fourth:nth-child(2n) {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .guttenberg-usa-callout .usa-width-one-fourth:nth-child(2n):last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-fourth:nth-child(4n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-three-fourths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  .guttenberg-usa-callout .usa-width-three-fourths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-sixth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-callout .usa-width-one-sixth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-sixth:nth-child(3n) {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-callout .usa-width-one-sixth:nth-child(3n):last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-sixth:nth-child(6n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-five-sixths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  .guttenberg-usa-callout .usa-width-five-sixths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-twelfth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+  }
+  .guttenberg-usa-callout .usa-width-one-twelfth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-twelfth:nth-child(3n) {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+  }
+  .guttenberg-usa-callout .usa-width-one-twelfth:nth-child(3n):last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-one-twelfth:nth-child(12n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-five-twelfths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+  }
+  .guttenberg-usa-callout .usa-width-five-twelfths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-callout .usa-width-seven-twelfths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+  }
+  .guttenberg-usa-callout .usa-width-seven-twelfths:last-child {
+    margin-right: 0;
+  }
+}
+
+.guttenberg-usa-callout .usa-end-row {
+  margin-right: 0;
+}
+
+.guttenberg-usa-callout .usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+.guttenberg-usa-callout .usa-hero {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url("../img/hero.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.guttenberg-usa-callout .usa-hero .usa-button {
+  color: #ffffff;
+}
+
+.guttenberg-usa-callout .usa-section-dark .usa-hero-link {
+  color: #02bfe7;
+}
+
+.guttenberg-usa-callout .usa-hero-callout {
+  background-color: #112e51;
+  padding: 3rem;
+}
+
+@media screen and (min-width: 481px) {
+  .guttenberg-usa-callout .usa-hero-callout {
+    max-width: 30rem;
+  }
+}
+
+.guttenberg-usa-callout .usa-hero-callout > *:first-child {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.guttenberg-usa-callout .usa-hero-callout .usa-button {
+  font-size: 1.4rem;
+  margin-top: 7rem;
+  width: 100%;
+}
+
+.guttenberg-usa-callout .usa-hero-callout-alt {
+  color: #ffffff;
+  display: block;
+}
+
+.guttenberg-usa-callout .usa-button,
+.guttenberg-usa-callout .usa-button-primary,
+.guttenberg-usa-callout .usa-button:visited,
+.guttenberg-usa-callout .usa-button-primary:visited,
+.guttenberg-usa-callout button,
+.guttenberg-usa-callout [type=button],
+.guttenberg-usa-callout [type=submit],
+.guttenberg-usa-callout [type=reset],
+.guttenberg-usa-callout [type=image] {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #0071bc;
+  border: 0;
+  border-radius: 0.3rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1;
+  outline: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 481px) {
+  .guttenberg-usa-callout .usa-button,
+  .guttenberg-usa-callout .usa-button-primary,
+  .guttenberg-usa-callout .usa-button:visited,
+  .guttenberg-usa-callout .usa-button-primary:visited,
+  .guttenberg-usa-callout button,
+  .guttenberg-usa-callout [type=button],
+  .guttenberg-usa-callout [type=submit],
+  .guttenberg-usa-callout [type=reset],
+  .guttenberg-usa-callout [type=image] {
+    width: auto;
+  }
+}
+
+.guttenberg-usa-callout .usa-button:hover, .guttenberg-usa-callout .usa-button.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary:hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-hover,
+.guttenberg-usa-callout .usa-button:visited:hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary:visited:hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-hover,
+.guttenberg-usa-callout button:hover,
+.guttenberg-usa-callout button.usa-button-hover,
+.guttenberg-usa-callout [type=button]:hover,
+.guttenberg-usa-callout [type=button].usa-button-hover,
+.guttenberg-usa-callout [type=submit]:hover,
+.guttenberg-usa-callout [type=submit].usa-button-hover,
+.guttenberg-usa-callout [type=reset]:hover,
+.guttenberg-usa-callout [type=reset].usa-button-hover,
+.guttenberg-usa-callout [type=image]:hover,
+.guttenberg-usa-callout [type=image].usa-button-hover {
+  background-color: #205493;
+  border-bottom: 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.guttenberg-usa-callout .usa-button:focus, .guttenberg-usa-callout .usa-button.usa-button-focus,
+.guttenberg-usa-callout .usa-button-primary:focus,
+.guttenberg-usa-callout .usa-button-primary.usa-button-focus,
+.guttenberg-usa-callout .usa-button:visited:focus,
+.guttenberg-usa-callout .usa-button:visited.usa-button-focus,
+.guttenberg-usa-callout .usa-button-primary:visited:focus,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-focus,
+.guttenberg-usa-callout button:focus,
+.guttenberg-usa-callout button.usa-button-focus,
+.guttenberg-usa-callout [type=button]:focus,
+.guttenberg-usa-callout [type=button].usa-button-focus,
+.guttenberg-usa-callout [type=submit]:focus,
+.guttenberg-usa-callout [type=submit].usa-button-focus,
+.guttenberg-usa-callout [type=reset]:focus,
+.guttenberg-usa-callout [type=reset].usa-button-focus,
+.guttenberg-usa-callout [type=image]:focus,
+.guttenberg-usa-callout [type=image].usa-button-focus {
+  box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+}
+
+.guttenberg-usa-callout .usa-button:active, .guttenberg-usa-callout .usa-button.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary:active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-active,
+.guttenberg-usa-callout .usa-button:visited:active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary:visited:active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-active,
+.guttenberg-usa-callout button:active,
+.guttenberg-usa-callout button.usa-button-active,
+.guttenberg-usa-callout [type=button]:active,
+.guttenberg-usa-callout [type=button].usa-button-active,
+.guttenberg-usa-callout [type=submit]:active,
+.guttenberg-usa-callout [type=submit].usa-button-active,
+.guttenberg-usa-callout [type=reset]:active,
+.guttenberg-usa-callout [type=reset].usa-button-active,
+.guttenberg-usa-callout [type=image]:active,
+.guttenberg-usa-callout [type=image].usa-button-active {
+  background-color: #112e51;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-primary-alt,
+.guttenberg-usa-callout .usa-button-primary.usa-button-primary-alt,
+.guttenberg-usa-callout .usa-button:visited.usa-button-primary-alt,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-primary-alt,
+.guttenberg-usa-callout button.usa-button-primary-alt,
+.guttenberg-usa-callout [type=button].usa-button-primary-alt,
+.guttenberg-usa-callout [type=submit].usa-button-primary-alt,
+.guttenberg-usa-callout [type=reset].usa-button-primary-alt,
+.guttenberg-usa-callout [type=image].usa-button-primary-alt {
+  background-color: #02bfe7;
+  color: #212121;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-primary-alt:hover, .guttenberg-usa-callout .usa-button.usa-button-primary-alt.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-primary-alt:hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-primary-alt.usa-button-hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-primary-alt:hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-primary-alt.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-primary-alt:hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-primary-alt.usa-button-hover,
+.guttenberg-usa-callout button.usa-button-primary-alt:hover,
+.guttenberg-usa-callout button.usa-button-primary-alt.usa-button-hover,
+.guttenberg-usa-callout [type=button].usa-button-primary-alt:hover,
+.guttenberg-usa-callout [type=button].usa-button-primary-alt.usa-button-hover,
+.guttenberg-usa-callout [type=submit].usa-button-primary-alt:hover,
+.guttenberg-usa-callout [type=submit].usa-button-primary-alt.usa-button-hover,
+.guttenberg-usa-callout [type=reset].usa-button-primary-alt:hover,
+.guttenberg-usa-callout [type=reset].usa-button-primary-alt.usa-button-hover,
+.guttenberg-usa-callout [type=image].usa-button-primary-alt:hover,
+.guttenberg-usa-callout [type=image].usa-button-primary-alt.usa-button-hover {
+  background-color: #00a6d2;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-primary-alt:active, .guttenberg-usa-callout .usa-button.usa-button-primary-alt.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-primary-alt:active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-primary-alt.usa-button-active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-primary-alt:active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-primary-alt.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-primary-alt:active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-primary-alt.usa-button-active,
+.guttenberg-usa-callout button.usa-button-primary-alt:active,
+.guttenberg-usa-callout button.usa-button-primary-alt.usa-button-active,
+.guttenberg-usa-callout [type=button].usa-button-primary-alt:active,
+.guttenberg-usa-callout [type=button].usa-button-primary-alt.usa-button-active,
+.guttenberg-usa-callout [type=submit].usa-button-primary-alt:active,
+.guttenberg-usa-callout [type=submit].usa-button-primary-alt.usa-button-active,
+.guttenberg-usa-callout [type=reset].usa-button-primary-alt:active,
+.guttenberg-usa-callout [type=reset].usa-button-primary-alt.usa-button-active,
+.guttenberg-usa-callout [type=image].usa-button-primary-alt:active,
+.guttenberg-usa-callout [type=image].usa-button-primary-alt.usa-button-active {
+  background-color: #046b99;
+  color: #ffffff;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-secondary,
+.guttenberg-usa-callout .usa-button-primary.usa-button-secondary,
+.guttenberg-usa-callout .usa-button:visited.usa-button-secondary,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-secondary,
+.guttenberg-usa-callout button.usa-button-secondary,
+.guttenberg-usa-callout [type=button].usa-button-secondary,
+.guttenberg-usa-callout [type=submit].usa-button-secondary,
+.guttenberg-usa-callout [type=reset].usa-button-secondary,
+.guttenberg-usa-callout [type=image].usa-button-secondary {
+  background-color: #e31c3d;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-secondary:hover, .guttenberg-usa-callout .usa-button.usa-button-secondary.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-secondary:hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-secondary.usa-button-hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-secondary:hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-secondary.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-secondary:hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-secondary.usa-button-hover,
+.guttenberg-usa-callout button.usa-button-secondary:hover,
+.guttenberg-usa-callout button.usa-button-secondary.usa-button-hover,
+.guttenberg-usa-callout [type=button].usa-button-secondary:hover,
+.guttenberg-usa-callout [type=button].usa-button-secondary.usa-button-hover,
+.guttenberg-usa-callout [type=submit].usa-button-secondary:hover,
+.guttenberg-usa-callout [type=submit].usa-button-secondary.usa-button-hover,
+.guttenberg-usa-callout [type=reset].usa-button-secondary:hover,
+.guttenberg-usa-callout [type=reset].usa-button-secondary.usa-button-hover,
+.guttenberg-usa-callout [type=image].usa-button-secondary:hover,
+.guttenberg-usa-callout [type=image].usa-button-secondary.usa-button-hover {
+  background-color: #cd2026;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-secondary:active, .guttenberg-usa-callout .usa-button.usa-button-secondary.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-secondary:active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-secondary.usa-button-active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-secondary:active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-secondary.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-secondary:active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-secondary.usa-button-active,
+.guttenberg-usa-callout button.usa-button-secondary:active,
+.guttenberg-usa-callout button.usa-button-secondary.usa-button-active,
+.guttenberg-usa-callout [type=button].usa-button-secondary:active,
+.guttenberg-usa-callout [type=button].usa-button-secondary.usa-button-active,
+.guttenberg-usa-callout [type=submit].usa-button-secondary:active,
+.guttenberg-usa-callout [type=submit].usa-button-secondary.usa-button-active,
+.guttenberg-usa-callout [type=reset].usa-button-secondary:active,
+.guttenberg-usa-callout [type=reset].usa-button-secondary.usa-button-active,
+.guttenberg-usa-callout [type=image].usa-button-secondary:active,
+.guttenberg-usa-callout [type=image].usa-button-secondary.usa-button-active {
+  background-color: #981b1e;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-gray,
+.guttenberg-usa-callout .usa-button-primary.usa-button-gray,
+.guttenberg-usa-callout .usa-button:visited.usa-button-gray,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-gray,
+.guttenberg-usa-callout button.usa-button-gray,
+.guttenberg-usa-callout [type=button].usa-button-gray,
+.guttenberg-usa-callout [type=submit].usa-button-gray,
+.guttenberg-usa-callout [type=reset].usa-button-gray,
+.guttenberg-usa-callout [type=image].usa-button-gray {
+  background-color: #5b616b;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-gray:hover, .guttenberg-usa-callout .usa-button.usa-button-gray.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-gray:hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-gray.usa-button-hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-gray:hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-gray.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-gray:hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-gray.usa-button-hover,
+.guttenberg-usa-callout button.usa-button-gray:hover,
+.guttenberg-usa-callout button.usa-button-gray.usa-button-hover,
+.guttenberg-usa-callout [type=button].usa-button-gray:hover,
+.guttenberg-usa-callout [type=button].usa-button-gray.usa-button-hover,
+.guttenberg-usa-callout [type=submit].usa-button-gray:hover,
+.guttenberg-usa-callout [type=submit].usa-button-gray.usa-button-hover,
+.guttenberg-usa-callout [type=reset].usa-button-gray:hover,
+.guttenberg-usa-callout [type=reset].usa-button-gray.usa-button-hover,
+.guttenberg-usa-callout [type=image].usa-button-gray:hover,
+.guttenberg-usa-callout [type=image].usa-button-gray.usa-button-hover {
+  background-color: #323a45;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-gray:active, .guttenberg-usa-callout .usa-button.usa-button-gray.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-gray:active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-gray.usa-button-active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-gray:active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-gray.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-gray:active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-gray.usa-button-active,
+.guttenberg-usa-callout button.usa-button-gray:active,
+.guttenberg-usa-callout button.usa-button-gray.usa-button-active,
+.guttenberg-usa-callout [type=button].usa-button-gray:active,
+.guttenberg-usa-callout [type=button].usa-button-gray.usa-button-active,
+.guttenberg-usa-callout [type=submit].usa-button-gray:active,
+.guttenberg-usa-callout [type=submit].usa-button-gray.usa-button-active,
+.guttenberg-usa-callout [type=reset].usa-button-gray:active,
+.guttenberg-usa-callout [type=reset].usa-button-gray.usa-button-active,
+.guttenberg-usa-callout [type=image].usa-button-gray:active,
+.guttenberg-usa-callout [type=image].usa-button-gray.usa-button-active {
+  background-color: #212121;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-outline,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline,
+.guttenberg-usa-callout button.usa-button-outline,
+.guttenberg-usa-callout [type=button].usa-button-outline,
+.guttenberg-usa-callout [type=submit].usa-button-outline,
+.guttenberg-usa-callout [type=reset].usa-button-outline,
+.guttenberg-usa-callout [type=image].usa-button-outline {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #0071bc;
+  color: #0071bc;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-outline:hover, .guttenberg-usa-callout .usa-button.usa-button-outline.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline:hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline.usa-button-hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline:hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline:hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline.usa-button-hover,
+.guttenberg-usa-callout button.usa-button-outline:hover,
+.guttenberg-usa-callout button.usa-button-outline.usa-button-hover,
+.guttenberg-usa-callout [type=button].usa-button-outline:hover,
+.guttenberg-usa-callout [type=button].usa-button-outline.usa-button-hover,
+.guttenberg-usa-callout [type=submit].usa-button-outline:hover,
+.guttenberg-usa-callout [type=submit].usa-button-outline.usa-button-hover,
+.guttenberg-usa-callout [type=reset].usa-button-outline:hover,
+.guttenberg-usa-callout [type=reset].usa-button-outline.usa-button-hover,
+.guttenberg-usa-callout [type=image].usa-button-outline:hover,
+.guttenberg-usa-callout [type=image].usa-button-outline.usa-button-hover {
+  box-shadow: inset 0 0 0 2px #205493;
+  color: #205493;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-outline:active, .guttenberg-usa-callout .usa-button.usa-button-outline.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline:active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline.usa-button-active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline:active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline:active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline.usa-button-active,
+.guttenberg-usa-callout button.usa-button-outline:active,
+.guttenberg-usa-callout button.usa-button-outline.usa-button-active,
+.guttenberg-usa-callout [type=button].usa-button-outline:active,
+.guttenberg-usa-callout [type=button].usa-button-outline.usa-button-active,
+.guttenberg-usa-callout [type=submit].usa-button-outline:active,
+.guttenberg-usa-callout [type=submit].usa-button-outline.usa-button-active,
+.guttenberg-usa-callout [type=reset].usa-button-outline:active,
+.guttenberg-usa-callout [type=reset].usa-button-outline.usa-button-active,
+.guttenberg-usa-callout [type=image].usa-button-outline:active,
+.guttenberg-usa-callout [type=image].usa-button-outline.usa-button-active {
+  box-shadow: inset 0 0 0 2px #112e51;
+  color: #112e51;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-outline:focus, .guttenberg-usa-callout .usa-button.usa-button-outline.usa-button-focus,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline:focus,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline.usa-button-focus,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline:focus,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline.usa-button-focus,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline:focus,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline.usa-button-focus,
+.guttenberg-usa-callout button.usa-button-outline:focus,
+.guttenberg-usa-callout button.usa-button-outline.usa-button-focus,
+.guttenberg-usa-callout [type=button].usa-button-outline:focus,
+.guttenberg-usa-callout [type=button].usa-button-outline.usa-button-focus,
+.guttenberg-usa-callout [type=submit].usa-button-outline:focus,
+.guttenberg-usa-callout [type=submit].usa-button-outline.usa-button-focus,
+.guttenberg-usa-callout [type=reset].usa-button-outline:focus,
+.guttenberg-usa-callout [type=reset].usa-button-outline.usa-button-focus,
+.guttenberg-usa-callout [type=image].usa-button-outline:focus,
+.guttenberg-usa-callout [type=image].usa-button-outline.usa-button-focus {
+  box-shadow: inset 0 0 0 2px #112e51, 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-outline-inverse,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline-inverse,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline-inverse,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline-inverse,
+.guttenberg-usa-callout button.usa-button-outline-inverse,
+.guttenberg-usa-callout [type=button].usa-button-outline-inverse,
+.guttenberg-usa-callout [type=submit].usa-button-outline-inverse,
+.guttenberg-usa-callout [type=reset].usa-button-outline-inverse,
+.guttenberg-usa-callout [type=image].usa-button-outline-inverse {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  color: #ffffff;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-outline-inverse:hover, .guttenberg-usa-callout .usa-button.usa-button-outline-inverse.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline-inverse:hover,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline-inverse.usa-button-hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline-inverse:hover,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline-inverse.usa-button-hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline-inverse:hover,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline-inverse.usa-button-hover,
+.guttenberg-usa-callout button.usa-button-outline-inverse:hover,
+.guttenberg-usa-callout button.usa-button-outline-inverse.usa-button-hover,
+.guttenberg-usa-callout [type=button].usa-button-outline-inverse:hover,
+.guttenberg-usa-callout [type=button].usa-button-outline-inverse.usa-button-hover,
+.guttenberg-usa-callout [type=submit].usa-button-outline-inverse:hover,
+.guttenberg-usa-callout [type=submit].usa-button-outline-inverse.usa-button-hover,
+.guttenberg-usa-callout [type=reset].usa-button-outline-inverse:hover,
+.guttenberg-usa-callout [type=reset].usa-button-outline-inverse.usa-button-hover,
+.guttenberg-usa-callout [type=image].usa-button-outline-inverse:hover,
+.guttenberg-usa-callout [type=image].usa-button-outline-inverse.usa-button-hover {
+  box-shadow: inset 0 0 0 2px #d6d7d9;
+  color: #d6d7d9;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-outline-inverse:active, .guttenberg-usa-callout .usa-button.usa-button-outline-inverse.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline-inverse:active,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline-inverse.usa-button-active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline-inverse:active,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline-inverse.usa-button-active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline-inverse:active,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline-inverse.usa-button-active,
+.guttenberg-usa-callout button.usa-button-outline-inverse:active,
+.guttenberg-usa-callout button.usa-button-outline-inverse.usa-button-active,
+.guttenberg-usa-callout [type=button].usa-button-outline-inverse:active,
+.guttenberg-usa-callout [type=button].usa-button-outline-inverse.usa-button-active,
+.guttenberg-usa-callout [type=submit].usa-button-outline-inverse:active,
+.guttenberg-usa-callout [type=submit].usa-button-outline-inverse.usa-button-active,
+.guttenberg-usa-callout [type=reset].usa-button-outline-inverse:active,
+.guttenberg-usa-callout [type=reset].usa-button-outline-inverse.usa-button-active,
+.guttenberg-usa-callout [type=image].usa-button-outline-inverse:active,
+.guttenberg-usa-callout [type=image].usa-button-outline-inverse.usa-button-active {
+  box-shadow: inset 0 0 0 2px #aeb0b5;
+  color: #d6d7d9;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-outline-inverse:focus, .guttenberg-usa-callout .usa-button.usa-button-outline-inverse.usa-button-focus,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline-inverse:focus,
+.guttenberg-usa-callout .usa-button-primary.usa-button-outline-inverse.usa-button-focus,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline-inverse:focus,
+.guttenberg-usa-callout .usa-button:visited.usa-button-outline-inverse.usa-button-focus,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline-inverse:focus,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-outline-inverse.usa-button-focus,
+.guttenberg-usa-callout button.usa-button-outline-inverse:focus,
+.guttenberg-usa-callout button.usa-button-outline-inverse.usa-button-focus,
+.guttenberg-usa-callout [type=button].usa-button-outline-inverse:focus,
+.guttenberg-usa-callout [type=button].usa-button-outline-inverse.usa-button-focus,
+.guttenberg-usa-callout [type=submit].usa-button-outline-inverse:focus,
+.guttenberg-usa-callout [type=submit].usa-button-outline-inverse.usa-button-focus,
+.guttenberg-usa-callout [type=reset].usa-button-outline-inverse:focus,
+.guttenberg-usa-callout [type=reset].usa-button-outline-inverse.usa-button-focus,
+.guttenberg-usa-callout [type=image].usa-button-outline-inverse:focus,
+.guttenberg-usa-callout [type=image].usa-button-outline-inverse.usa-button-focus {
+  box-shadow: inset 0 0 0 2px #aeb0b5, 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+}
+
+.guttenberg-usa-callout .usa-button.usa-button-big,
+.guttenberg-usa-callout .usa-button-primary.usa-button-big,
+.guttenberg-usa-callout .usa-button:visited.usa-button-big,
+.guttenberg-usa-callout .usa-button-primary:visited.usa-button-big,
+.guttenberg-usa-callout button.usa-button-big,
+.guttenberg-usa-callout [type=button].usa-button-big,
+.guttenberg-usa-callout [type=submit].usa-button-big,
+.guttenberg-usa-callout [type=reset].usa-button-big,
+.guttenberg-usa-callout [type=image].usa-button-big {
+  font-size: 1.9rem;
+  padding: 1.5rem 3rem;
+}
+
+.guttenberg-usa-callout .usa-button:disabled,
+.guttenberg-usa-callout .usa-button-disabled {
+  background-color: #d6d7d9;
+  color: #323a45;
+  pointer-events: none;
+}
+
+.guttenberg-usa-callout .usa-button:disabled:hover, .guttenberg-usa-callout .usa-button:disabled.usa-button-hover, .guttenberg-usa-callout .usa-button:disabled:active, .guttenberg-usa-callout .usa-button:disabled.usa-button-active, .guttenberg-usa-callout .usa-button:disabled:focus,
+.guttenberg-usa-callout .usa-button-disabled:hover,
+.guttenberg-usa-callout .usa-button-disabled.usa-button-hover,
+.guttenberg-usa-callout .usa-button-disabled:active,
+.guttenberg-usa-callout .usa-button-disabled.usa-button-active,
+.guttenberg-usa-callout .usa-button-disabled:focus {
+  background-color: #d6d7d9;
+  border: 0;
+  box-shadow: none;
+  color: #323a45;
+}
+
+.guttenberg-usa-callout .usa-button-unstyled {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+}
+
+.guttenberg-usa-callout .usa-button-unstyled:hover {
+  background-color: transparent;
+}
+
+.guttenberg-usa-callout .usa-hero-callout-alt {
+  color: inherit;
+}
+
+.guttenberg-usa-callout .editor-plain-text {
+  color: #191e23;
+}
+
+.guttenberg-usa-callout .usa-button__inline-link {
+  position: relative;
+  width: 300px;
+}
+
+.guttenberg-usa-callout .usa-button__inline-link::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.guttenberg-usa-callout .dashicons-admin-links {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+}
+
+.guttenberg-usa-callout .editor-url-input {
+  float: left;
+}
+
+.guttenberg-usa-callout .components-button {
+  background-color: #fff;
+  color: #191e23;
+  box-shadow: inset 0 0 0 1px #e2e4e7, inset 0 0 0 2px #fff, 0 1px 1px rgba(25, 30, 35, 0.2);
+  -webkit-appearance: none;
+  -ms-flex-align: center;
+      align-items: center;
+  border: 0;
+  border: none;
+  color: #555d66;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 13px;
+  margin: 0;
+  overflow: hidden;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-indent: 4px;
+}

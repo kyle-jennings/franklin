@@ -8,7 +8,11 @@ function franklin_register_button_block() {
   }
 
   $blocks = array(
-    'button'
+    'accordion',
+    'alert',
+    'alertpanel',
+    'button',
+    'callout',
   );
 
   foreach($blocks as $block) {

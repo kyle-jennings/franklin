@@ -1,0 +1,903 @@
+.guttenberg-usa-alert {
+  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+  /**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+  /**
+ * Remove default margin.
+ */
+  /* HTML5 display definitions
+   ========================================================================== */
+  /**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+  /**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+  /**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+  /**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+  /* Links
+   ========================================================================== */
+  /**
+ * Remove the gray background color from active links in IE 10.
+ */
+  /**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+  /* Text-level semantics
+   ========================================================================== */
+  /**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+  /**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+  /**
+ * Address styling not present in Safari and Chrome.
+ */
+  /**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+  /**
+ * Address styling not present in IE 8/9.
+ */
+  /**
+ * Address inconsistent and variable font size in all browsers.
+ */
+  /**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+  /* Embedded content
+   ========================================================================== */
+  /**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+  /**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+  /* Grouping content
+   ========================================================================== */
+  /**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+  /**
+ * Address differences between Firefox and other browsers.
+ */
+  /**
+ * Contain overflow in all browsers.
+ */
+  /**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+  /* Forms
+   ========================================================================== */
+  /**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+  /**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+  /**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+  /**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+  /**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+  /**
+ * Re-set default cursor for disabled elements.
+ */
+  /**
+ * Remove inner padding and border in Firefox 4+.
+ */
+  /**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+  /**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+  /**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+  /**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+  /**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+  /**
+ * Define consistent border, margin, and padding.
+ */
+  /**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+  /**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+  /**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+  /* Tables
+   ========================================================================== */
+  /**
+ * Remove most spacing between table cells.
+ */
+  /* stylelint-disable at-rule-empty-line-before */
+  /* stylelint-enable */
+}
+
+.guttenberg-usa-alert html {
+  box-sizing: border-box;
+}
+
+.guttenberg-usa-alert *, .guttenberg-usa-alert *::after, .guttenberg-usa-alert *::before {
+  box-sizing: inherit;
+}
+
+.guttenberg-usa-alert html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+.guttenberg-usa-alert body {
+  margin: 0;
+}
+
+.guttenberg-usa-alert article,
+.guttenberg-usa-alert aside,
+.guttenberg-usa-alert details,
+.guttenberg-usa-alert figcaption,
+.guttenberg-usa-alert figure,
+.guttenberg-usa-alert footer,
+.guttenberg-usa-alert header,
+.guttenberg-usa-alert hgroup,
+.guttenberg-usa-alert main,
+.guttenberg-usa-alert menu,
+.guttenberg-usa-alert nav,
+.guttenberg-usa-alert section,
+.guttenberg-usa-alert summary {
+  display: block;
+}
+
+.guttenberg-usa-alert audio,
+.guttenberg-usa-alert canvas,
+.guttenberg-usa-alert progress,
+.guttenberg-usa-alert video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+.guttenberg-usa-alert audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+.guttenberg-usa-alert [hidden],
+.guttenberg-usa-alert template {
+  display: none;
+}
+
+.guttenberg-usa-alert a {
+  background-color: transparent;
+}
+
+.guttenberg-usa-alert a:active,
+.guttenberg-usa-alert a:hover {
+  outline: 0;
+}
+
+.guttenberg-usa-alert abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+.guttenberg-usa-alert b,
+.guttenberg-usa-alert strong {
+  font-weight: bold;
+}
+
+.guttenberg-usa-alert dfn {
+  font-style: italic;
+}
+
+.guttenberg-usa-alert h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.guttenberg-usa-alert mark {
+  background: #ff0;
+  color: #000;
+}
+
+.guttenberg-usa-alert small {
+  font-size: 80%;
+}
+
+.guttenberg-usa-alert sub,
+.guttenberg-usa-alert sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.guttenberg-usa-alert sup {
+  top: -0.5em;
+}
+
+.guttenberg-usa-alert sub {
+  bottom: -0.25em;
+}
+
+.guttenberg-usa-alert img {
+  border: 0;
+}
+
+.guttenberg-usa-alert svg:not(:root) {
+  overflow: hidden;
+}
+
+.guttenberg-usa-alert figure {
+  margin: 1em 40px;
+}
+
+.guttenberg-usa-alert hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.guttenberg-usa-alert pre {
+  overflow: auto;
+}
+
+.guttenberg-usa-alert code,
+.guttenberg-usa-alert kbd,
+.guttenberg-usa-alert pre,
+.guttenberg-usa-alert samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.guttenberg-usa-alert button,
+.guttenberg-usa-alert input,
+.guttenberg-usa-alert optgroup,
+.guttenberg-usa-alert select,
+.guttenberg-usa-alert textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+.guttenberg-usa-alert button {
+  overflow: visible;
+}
+
+.guttenberg-usa-alert button,
+.guttenberg-usa-alert select {
+  text-transform: none;
+}
+
+.guttenberg-usa-alert button,
+.guttenberg-usa-alert html input[type="button"],
+.guttenberg-usa-alert input[type="reset"],
+.guttenberg-usa-alert input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+.guttenberg-usa-alert button[disabled],
+.guttenberg-usa-alert html input[disabled] {
+  cursor: default;
+}
+
+.guttenberg-usa-alert button::-moz-focus-inner,
+.guttenberg-usa-alert input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.guttenberg-usa-alert input {
+  line-height: normal;
+}
+
+.guttenberg-usa-alert input[type="checkbox"],
+.guttenberg-usa-alert input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+.guttenberg-usa-alert input[type="number"]::-webkit-inner-spin-button,
+.guttenberg-usa-alert input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.guttenberg-usa-alert input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+.guttenberg-usa-alert input[type="search"]::-webkit-search-cancel-button,
+.guttenberg-usa-alert input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.guttenberg-usa-alert fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+.guttenberg-usa-alert legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+.guttenberg-usa-alert textarea {
+  overflow: auto;
+}
+
+.guttenberg-usa-alert optgroup {
+  font-weight: bold;
+}
+
+.guttenberg-usa-alert table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.guttenberg-usa-alert td,
+.guttenberg-usa-alert th {
+  padding: 0;
+}
+
+@font-face {
+  .guttenberg-usa-alert {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro-light-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-alert {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro-regular-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-alert {
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/sourcesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-italic-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-italic-webfont.woff") format("woff"), url("../fonts/sourcesanspro-italic-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-alert {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro-bold-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-alert {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/merriweather-light-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-alert {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/merriweather-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-alert {
+    font-family: "Merriweather";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/merriweather-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../fonts/merriweather-italic-webfont.woff") format("woff"), url("../fonts/merriweather-italic-webfont.ttf") format("truetype");
+  }
+}
+
+@font-face {
+  .guttenberg-usa-alert {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/merriweather-bold-webfont.ttf") format("truetype");
+  }
+}
+
+.guttenberg-usa-alert html {
+  box-sizing: border-box;
+}
+
+.guttenberg-usa-alert *,
+.guttenberg-usa-alert *::before,
+.guttenberg-usa-alert *::after {
+  box-sizing: inherit;
+}
+
+.guttenberg-usa-alert body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.guttenberg-usa-alert .lt-ie9 * {
+  filter: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.guttenberg-usa-alert [hidden] {
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.guttenberg-usa-alert .usa-grid,
+.guttenberg-usa-alert .usa-grid-full {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1040px;
+}
+
+.guttenberg-usa-alert .usa-grid::after,
+.guttenberg-usa-alert .usa-grid-full::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.guttenberg-usa-alert .usa-grid {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .guttenberg-usa-alert .usa-grid {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.guttenberg-usa-alert .usa-grid-full {
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .guttenberg-usa-alert .usa-width-one-whole {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .guttenberg-usa-alert .usa-width-one-whole:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-half {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .guttenberg-usa-alert .usa-width-one-half:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-third {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-alert .usa-width-one-third:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-two-thirds {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .guttenberg-usa-alert .usa-width-two-thirds:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-fourth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .guttenberg-usa-alert .usa-width-one-fourth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-fourth:nth-child(2n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-three-fourths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .guttenberg-usa-alert .usa-width-three-fourths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-sixth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-alert .usa-width-one-sixth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-sixth:nth-child(3n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-five-sixths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .guttenberg-usa-alert .usa-width-five-sixths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-twelfth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-alert .usa-width-one-twelfth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-twelfth:nth-child(3n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-five-twelfths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-alert .usa-width-five-twelfths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-seven-twelfths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .guttenberg-usa-alert .usa-width-seven-twelfths:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .guttenberg-usa-alert .usa-width-one-whole {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  .guttenberg-usa-alert .usa-width-one-whole:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-half {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  .guttenberg-usa-alert .usa-width-one-half:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-third {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .guttenberg-usa-alert .usa-width-one-third:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-two-thirds {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  .guttenberg-usa-alert .usa-width-two-thirds:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-fourth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .guttenberg-usa-alert .usa-width-one-fourth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-fourth:nth-child(2n) {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .guttenberg-usa-alert .usa-width-one-fourth:nth-child(2n):last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-fourth:nth-child(4n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-three-fourths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  .guttenberg-usa-alert .usa-width-three-fourths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-sixth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-alert .usa-width-one-sixth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-sixth:nth-child(3n) {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  .guttenberg-usa-alert .usa-width-one-sixth:nth-child(3n):last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-sixth:nth-child(6n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-five-sixths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+  }
+  .guttenberg-usa-alert .usa-width-five-sixths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-twelfth {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+  }
+  .guttenberg-usa-alert .usa-width-one-twelfth:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-twelfth:nth-child(3n) {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%;
+  }
+  .guttenberg-usa-alert .usa-width-one-twelfth:nth-child(3n):last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-one-twelfth:nth-child(12n) {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-five-twelfths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+  }
+  .guttenberg-usa-alert .usa-width-five-twelfths:last-child {
+    margin-right: 0;
+  }
+  .guttenberg-usa-alert .usa-width-seven-twelfths {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+  }
+  .guttenberg-usa-alert .usa-width-seven-twelfths:last-child {
+    margin-right: 0;
+  }
+}
+
+.guttenberg-usa-alert .usa-end-row {
+  margin-right: 0;
+}
+
+.guttenberg-usa-alert .usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+.guttenberg-usa-alert .usa-alert {
+  background-color: #f1f1f1;
+  background-position: 1rem 2rem;
+  background-repeat: no-repeat;
+  background-size: 4rem;
+  margin-top: 1.5em;
+  padding: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  .guttenberg-usa-alert .usa-alert {
+    background-size: 5.2rem;
+  }
+}
+
+.guttenberg-usa-alert .usa-alert ul {
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
+.guttenberg-usa-alert .usa-alert-icon {
+  display: table-cell;
+  padding-right: 1rem;
+}
+
+.guttenberg-usa-alert .usa-alert-body {
+  display: table-cell;
+  padding-left: 3.5rem;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 600px) {
+  .guttenberg-usa-alert .usa-alert-body {
+    padding-left: 5rem;
+  }
+}
+
+.guttenberg-usa-alert .usa-alert-body p:first-child {
+  margin-top: 0.8rem;
+}
+
+.guttenberg-usa-alert .usa-alert-heading {
+  margin-bottom: .3rem;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .guttenberg-usa-alert .usa-alert-heading {
+    margin-top: .3rem;
+  }
+}
+
+.guttenberg-usa-alert .usa-alert-text {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.guttenberg-usa-alert .usa-alert-success {
+  background-color: #e7f4e4;
+  background-image: url("../img/alerts/success.png");
+  background-image: url("../img/alerts/success.svg");
+}
+
+.guttenberg-usa-alert .usa-alert-warning {
+  background-color: #fff1d2;
+  background-image: url("../img/alerts/warning.png");
+  background-image: url("../img/alerts/warning.svg");
+}
+
+.guttenberg-usa-alert .usa-alert-error {
+  background-color: #f9dede;
+  background-image: url("../img/alerts/error.png");
+  background-image: url("../img/alerts/error.svg");
+}
+
+.guttenberg-usa-alert .usa-alert-info {
+  background-color: #e1f3f8;
+  background-image: url("../img/alerts/info.png");
+  background-image: url("../img/alerts/info.svg");
+}
+
+.guttenberg-usa-alert .usa-alert-no_icon {
+  background-image: none;
+}
+
+.guttenberg-usa-alert .usa-alert-success {
+  background-color: #e7f4e4;
+  background-image: url("../img/alerts/success.png");
+  background-image: url("../img/alerts/success.svg");
+}
+
+.guttenberg-usa-alert .usa-alert-warning {
+  background-color: #fff1d2;
+  background-image: url("../img/alerts/warning.png");
+  background-image: url("../img/alerts/warning.svg");
+}
+
+.guttenberg-usa-alert .usa-alert-error {
+  background-color: #f9dede;
+  background-image: url("../img/alerts/error.png");
+  background-image: url("../img/alerts/error.svg");
+}
+
+.guttenberg-usa-alert .usa-alert-info {
+  background-color: #e1f3f8;
+  background-image: url("../img/alerts/info.png");
+  background-image: url("../img/alerts/info.svg");
+}

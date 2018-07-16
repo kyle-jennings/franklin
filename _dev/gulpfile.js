@@ -80,11 +80,11 @@ paths.gutenGlobSCSS = paths.gutenbergSrc + '/**/*.scss',
 
 
 // ---------------------------------------------------------------------------
-//  Utilities
+//  Tasks
 // ---------------------------------------------------------------------------
 
 
-gulp.task('gutenberg_js', function(){
+gulp.task('gutenberg_js',['gutenberg_js:Clean'], function(){
   var folders = getFolders(paths.gutenbergSrc);
   var tasks = folders.map(function(folder) {
     var file = 'block.js';
@@ -106,7 +106,22 @@ gulp.task('gutenberg_js', function(){
 });
 
 
-gulp.task('gutenberg_css', function(){
+gulp.task('gutenberg_js:Clean', function(){
+
+  var folders = getFolders(paths.gutenbergSrc);
+  var tasks = folders.map(function(folder) {
+
+    let blockPath = paths.gutenbergBuilds + '/' + folder + '/lib/*.js';
+
+    return del(
+      [blockPath],
+      {read:false, force: true}
+    );
+  });  
+});
+
+
+gulp.task('gutenberg_css',['gutenberg_css:Clean'], function(){
   var folders = getFolders(paths.gutenbergSrc);
   var tasks = folders.map(function(folder) {
 
@@ -137,6 +152,52 @@ gulp.task('gutenberg_css', function(){
   });
 
   return tasks; //merge(tasks, root);
+});
+
+
+gulp.task('gutenberg_css:Clean', function(){
+
+  var folders = getFolders(paths.gutenbergSrc);
+  var tasks = folders.map(function(folder) {
+
+    let blockPath = paths.gutenbergBuilds + '/' + folder + '/lib/*.css';
+
+    return del(
+      [blockPath],
+      {read:false, force: true}
+    );
+  });
+
+});
+
+
+
+
+gulp.task('gutenberg_images',['gutenberg_images:Clean'], function(){
+  var folders = getFolders(paths.gutenbergSrc);
+  var tasks = folders.map(function(folder) {
+
+    let srcPath = paths.gutenbergSrc + '/' + folder + '/img/**/*';
+    let blockPath = paths.gutenbergBuilds + '/' + folder + '/img';
+
+    return gulp.src([ srcPath])
+    .pipe(gulp.dest( blockPath ));
+  });
+});
+
+gulp.task('gutenberg_images:Clean', function(){
+  
+  var folders = getFolders(paths.gutenbergSrc);
+  var tasks = folders.map(function(folder) {
+    let blockPath = paths.gutenbergBuilds + '/' + folder + '/img/*';
+
+    return del(
+      [blockPath],
+      {read:false, force: true}
+    );
+
+  });
+
 });
 
 
@@ -258,6 +319,7 @@ gulp.task('watch', function() {
 gulp.task('gutenberg_build', function(){
   gulp.start('gutenberg_js');
   gulp.start('gutenberg_css');
+  gulp.start('gutenberg_images');
 });
 
 /**
@@ -267,4 +329,5 @@ gulp.task('gutenberg_watch', function() {
   gulp.start('gutenberg_build');
   gulp.watch(paths.gutenbergSrc + '/**/*.js', ['gutenberg_js']);
   gulp.watch(paths.gutenbergSrc + '/**/*.scss', ['gutenberg_css']);
+  gulp.watch(paths.gutenbergSrc + '/img/**/*', ['gutenberg_images']);
 });

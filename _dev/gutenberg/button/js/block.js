@@ -1,12 +1,12 @@
 const { __ } = wp.i18n;
-const { RichText, MediaUpload, PlainText, BlockControls } = wp.editor;
+const { RichText, MediaUpload, PlainText, BlockControls, UrlInput, } = wp.editor;
 const { registerBlockType } = wp.blocks;
-const { DropdownMenu, Dropdown, Button } = wp.components;
+const { Dashicon, DropdownMenu, Dropdown, Button, IconButton, } = wp.components;
 
 registerBlockType('franklin/button', {
-	title: 'Button',
+	title: 'USA Button',
 	keywords: ['button' ],
-	icon: 'admin-links',
+	icon: 'button',
 	category: 'layout',
 	attributes: {
 		text: {
@@ -15,8 +15,10 @@ registerBlockType('franklin/button', {
 		},
 
 		url: {
-			source: 'text',
-			selector: '.url'
+			type: 'string',
+			source: 'attribute',
+			selector: 'a',
+			attribute: 'href',
 		},
 
 		color: {},
@@ -64,23 +66,34 @@ registerBlockType('franklin/button', {
 						</BlockControls>
 					)
 				}
-				<button className={'usa-button ' + attributes.color } >
+				<a className={'usa-button ' + attributes.color } >
 					<PlainText
 					  onChange={ content => setAttributes({ text: content }) }
 					  value={ attributes.text }
 					  placeholder="Your button text"
 					  className="button-text"
 					/> 
-				</button>
+				</a>
+					<form
+						className="usa-button__inline-link"
+						onSubmit={ ( event ) => event.preventDefault() }>
+						<Dashicon icon="admin-links" />
+						<UrlInput
+							value={ attributes.url }
+							onChange={ ( value ) => setAttributes( { url: value } ) }
+						/>
+						<IconButton icon="editor-break" label={ __( 'Apply' ) } type="submit" />
+					</form>
+				
 			</div>
 		);
 	},
 	
 	save({attributes}) {
 		return (
-			<button className={'usa-button ' + attributes.color }>
+			<a href={attributes.url} className={'usa-button ' + attributes.color }>
 				{ attributes.text }
-			</button>
+			</a>
 		);
 	} 
 

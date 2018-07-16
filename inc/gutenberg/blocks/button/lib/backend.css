@@ -1263,24 +1263,50 @@
   background-color: transparent;
 }
 
-.guttenberg-usa-button .usa-button {
-  padding: 10px 20px;
-}
-
-.guttenberg-usa-button .button-text,
-.guttenberg-usa-button .button-text:focus,
-.guttenberg-usa-button .button-text *,
-.guttenberg-usa-button .button-text *:focus {
-  background: transparent;
-  border: none;
-}
-
-.guttenberg-usa-button .editor-block-list__block input::-webkit-input-placeholder,
-.guttenberg-usa-button .editor-block-list__block textarea::-webkit-input-placeholder,
-.guttenberg-usa-button .editor-post-title input::-webkit-input-placeholder,
-.guttenberg-usa-button .editor-post-title textarea::-webkit-input-placeholder,
 .guttenberg-usa-button .editor-plain-text {
-  color: white;
-  height: 17px;
-  font-size: 17px;
+  color: #191e23;
+}
+
+.guttenberg-usa-button .usa-button__inline-link {
+  position: relative;
+  width: 300px;
+}
+
+.guttenberg-usa-button .usa-button__inline-link::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.guttenberg-usa-button .dashicons-admin-links {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+}
+
+.guttenberg-usa-button .editor-url-input {
+  float: left;
+}
+
+.guttenberg-usa-button .components-button {
+  background-color: #fff;
+  color: #191e23;
+  box-shadow: inset 0 0 0 1px #e2e4e7, inset 0 0 0 2px #fff, 0 1px 1px rgba(25, 30, 35, 0.2);
+  -webkit-appearance: none;
+  -ms-flex-align: center;
+      align-items: center;
+  border: 0;
+  border: none;
+  color: #555d66;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 13px;
+  margin: 0;
+  overflow: hidden;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-indent: 4px;
 }
