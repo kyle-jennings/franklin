@@ -5,7 +5,7 @@ const { DropdownMenu, Dropdown, TextareaControl } = wp.components;
 
 registerBlockType('franklin/accordion', {
 	title: 'USA Accordion',
-	keywords: ['accodion', 'collapsible', 'expand'],
+	keywords: ['accordion', 'collapsible', 'expand'],
 	icon: 'editor-expand',
 	category: 'layout',
 	attributes: {
