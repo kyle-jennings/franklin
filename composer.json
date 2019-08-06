@@ -1,0 +1,11 @@
+{
+    "name": "kyle-jennings/franklin",
+    "description": "WordPress companion plugin for the Benjamin theme",
+    "homepage": "https://github.com/kyle-jennings/grankline",
+    "type": "wordpress-plugin",
+    "extra": {
+      "branch-alias": {
+        "dev-composer": "dev-dev"
+      }
+    }
+  }
